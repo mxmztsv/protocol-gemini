@@ -1,0 +1,108 @@
+.audio-player-progress-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    /*position: relative;*/
+    width: 100%;
+}
+
+.audio-player-progress-bar__item {
+    width: 3px;
+    /*margin: 0 4px;*/
+    /*height: 30%;*/
+    /*min-height: 50px;*/
+    position: absolute;
+}
+
+.audio-player-progress-bar__wrapper {
+    width: 3px;
+    margin: 0 3px;
+    /*height: 50px;*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progress-bar__item__1 {
+    height: 30%;
+}
+
+#progress-bar__item__2 {
+    height: 60%;
+}
+
+#progress-bar__item__3 {
+    height: 100%;
+}
+
+#progress-bar__item__4 {
+    height: 60%;
+}
+
+#progress-bar__item__5 {
+    height: 30%;
+}
+
+#progress-bar__item__6 {
+    height: 60%;
+}
+
+#progress-bar__item__7 {
+    height: 30%;
+}
+
+#progress-bar__item__8 {
+    height: 60%;
+}
+
+#progress-bar__item__9 {
+    height: 65%;
+}
+
+#progress-bar__item__10 {
+    height: 60%;
+}
+
+
+#progress-bar__item__11 {
+    height: 30%;
+}
+
+#progress-bar__item__12 {
+    height: 30%;
+}
+
+#progress-bar__item__13 {
+    height: 70%;
+}
+
+#progress-bar__item__14 {
+    height: 30%;
+}
+
+#progress-bar__item__15 {
+    height: 60%;
+}
+
+#progress-bar__item__16 {
+    height: 65%;
+}
+
+#progress-bar__item__17 {
+    height: 60%;
+}
+
+#progress-bar__item__18 {
+    height: 100%;
+}
+
+#progress-bar__item__19 {
+    height: 60%;
+}
+
+#progress-bar__item__20 {
+    height: 30%;
+}

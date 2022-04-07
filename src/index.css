@@ -1,0 +1,68 @@
+@import url('../src/styles/Header.css');
+@import url('../src/styles/Main.css');
+@import url('../src/styles/Loader.css');
+@import url('../src/styles/AudioPlayer.css');
+@import url('../src/styles/AudioPlayerProgressBar.css');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn {
+  /*border: 2px solid #1EEDD9;*/
+  border-style: none;
+  background: transparent;
+  height: 64px;
+  width: 242px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.035em;
+  /*clip-path: polygon(7% 0, 100% 0, 100% 30%, 100% 70%, 93% 100%, 30% 100%, 0 100%, 0 100%, 0% 30%);*/
+
+  background-image:   linear-gradient(to right bottom, transparent calc(50% - 2px), #1EEDD9 calc(50% - 1px), #1EEDD9 50%, transparent calc(50% + 1px)),
+  linear-gradient(#1EEDD9, #1EEDD9),
+  linear-gradient(#1EEDD9, #1EEDD9),
+  linear-gradient(to right bottom, transparent calc(50% - 2px), #1EEDD9 calc(50% - 1px), #1EEDD9 50%, transparent calc(50% + 1px)),
+  linear-gradient(#1EEDD9, #1EEDD9),
+  linear-gradient(#1EEDD9, #1EEDD9);
+
+  background-size: 8% 30%, 92% 2px, 2px 70%, 8% 30%, 92% 2px, 2px 70%;
+  background-position: 0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%;
+  background-repeat: no-repeat;
+  /*transition: .3s ease;*/
+  text-transform: uppercase;
+
+  color: #FFFFFF
+}
+
+.btn:hover {
+  background: #1EEDD9;
+  clip-path: polygon(7% 0, 100% 0, 100% 30%, 100% 70%, 93% 100%, 30% 100%, 0 100%, 0 100%, 0% 30%);
+  color: #0D0D0D;
+  transition-duration: .3s;
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('./assets/fonts/MonumentExtended-Regular.otf') format('truetype'); /* Safari, Android, iOS */
+}
