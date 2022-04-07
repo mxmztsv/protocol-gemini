@@ -3,6 +3,8 @@
 @import url('../src/styles/Loader.css');
 @import url('../src/styles/AudioPlayer.css');
 @import url('../src/styles/AudioPlayerProgressBar.css');
+@import url('../src/styles/About.css');
+@import url('../src/styles/VideoPlayer.css');
 
 body {
   margin: 0;
@@ -11,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: black;
+  background: #0D0D0D;
 }
 
 code {
@@ -53,6 +55,10 @@ code {
   clip-path: polygon(7% 0, 100% 0, 100% 30%, 100% 70%, 93% 100%, 30% 100%, 0 100%, 0 100%, 0% 30%);
   color: #0D0D0D;
   transition-duration: .3s;
+}
+
+.purple {
+  color: #7E5EFF;
 }
 
 

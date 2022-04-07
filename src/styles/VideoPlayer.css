@@ -1,0 +1,22 @@
+.video-player {
+    clip-path: polygon(5% 0, 100% 0, 100% 88%, 93% 100%, 0 100%, 0 9%);
+}
+
+.video-react-big-play-button-left {
+    top: calc(50% - 60px/2) !important;
+    left: calc(50% - 60px/2) !important;
+    border-style: none !important;
+    border-radius: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.video-react-current-time-display {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.video-react-duration-display {
+    font-family: 'Inter', sans-serif !important;
+}

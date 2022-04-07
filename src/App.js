@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import './App.css';
 import {Main} from "./sections/Main";
-import {Header} from "./components/Header";
 import {Loader} from "./sections/Loader";
+import {About} from "./sections/About";
 
 function App() {
 
@@ -10,11 +10,14 @@ function App() {
 
     return (
         <div className="App">
-            { loading ? <Loader setLoading={setLoading}/> : (
+            {loading ? <Loader setLoading={setLoading}/> : (
+                <>
+                    <Main/>
+                    <About/>
+                </>
 
-                <Main/>
 
-            ) }
+            )}
         </div>
     );
 }
