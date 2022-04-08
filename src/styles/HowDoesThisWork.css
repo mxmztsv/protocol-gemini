@@ -1,0 +1,113 @@
+.work {
+    padding: 0 20px;
+    background: rgb(126,94,255);
+    background: radial-gradient(circle, rgba(126,94,255,.5) 0%, rgba(13,13,13,1) 50%, rgba(13,13,13,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+}
+
+.work__title {
+    max-width: 800px;
+}
+
+.work__lines {
+    position: absolute;
+    /*right: 380px;*/
+    right: 25%;
+    top: 1880px;
+}
+
+.work__card__bg {
+    background-image: url("../assets/svg/step-bg.svg");
+    background-repeat: no-repeat;
+    width: 276px;
+    height: 278px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work__card__number {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    top: -40px;
+
+    /* acc 2 */
+
+    color: #1EEDD9;
+}
+
+.work__card__title {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 0 15px 0;
+    position: relative;
+    top: -40px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* Gray 6 */
+
+    color: #F2F2F2;
+}
+
+.work__card__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    position: relative;
+    top: -40px;
+    /* or 150% */
+
+    letter-spacing: -0.03em;
+
+    /* Gray 6 */
+
+    color: #F2F2F2;
+}
+
+.work__card__wrapper {
+    width: 280px;
+}
+
+.work__cards__container {
+    background-image: url("../assets/svg/works-cards-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 75% 80%;
+    background-position: 30% 115%;
+    margin: 70px 0;
+}
+
+#work__card__container_1 {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#work__card__container_2 {
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#work__card__container_3 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -3,6 +3,7 @@ import './App.css';
 import {Main} from "./sections/Main";
 import {Loader} from "./sections/Loader";
 import {About} from "./sections/About";
+import {HowDoesThisWork} from "./sections/HowDoesThisWork";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
                 <>
                     <Main/>
                     <About/>
+                    <HowDoesThisWork/>
                 </>
 
 

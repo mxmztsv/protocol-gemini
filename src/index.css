@@ -5,6 +5,7 @@
 @import url('../src/styles/AudioPlayerProgressBar.css');
 @import url('../src/styles/About.css');
 @import url('../src/styles/VideoPlayer.css');
+@import url('../src/styles/HowDoesThisWork.css');
 
 body {
   margin: 0;
@@ -59,6 +60,21 @@ code {
 
 .purple {
   color: #7E5EFF;
+}
+
+.title {
+  font-family: 'Monument Extended', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  /* or 48px */
+
+  text-transform: uppercase;
+
+  /* Gray 6 */
+
+  color: #F2F2F2;
 }
 
 

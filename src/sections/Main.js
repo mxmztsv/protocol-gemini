@@ -22,7 +22,7 @@ export const Main = () => {
             </div>
             <img src={sight} className="sight"/>
             <img src={barcode} className="barcode"/>
-            <h1 className="main__title">Step into the Future...</h1>
+            <h1 className="main__title" data-text="STEP INTO THE FUTURE...">Step into the Future...</h1>
             <div className="main__audio-player__wrapper">
                 <div className="main__audio-player__container">
                     <AudioPlayer/>
