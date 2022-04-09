@@ -4,6 +4,9 @@ import {Main} from "./sections/Main";
 import {Loader} from "./sections/Loader";
 import {About} from "./sections/About";
 import {HowDoesThisWork} from "./sections/HowDoesThisWork";
+import {WhatsThePoint} from "./sections/WhatsThePoint";
+import {AugmentedReality} from "./sections/AugmentedReality";
+import {Roadmap} from "./sections/Roadmap";
 
 function App() {
 
@@ -16,9 +19,10 @@ function App() {
                     <Main/>
                     <About/>
                     <HowDoesThisWork/>
+                    <WhatsThePoint/>
+                    <AugmentedReality/>
+                    <Roadmap/>
                 </>
-
-
             )}
         </div>
     );

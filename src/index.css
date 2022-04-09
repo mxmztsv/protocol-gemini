@@ -6,6 +6,10 @@
 @import url('../src/styles/About.css');
 @import url('../src/styles/VideoPlayer.css');
 @import url('../src/styles/HowDoesThisWork.css');
+@import url('../src/styles/WhatsThePoint.css');
+@import url('../src/styles/AugmentedReality.css');
+@import url('../src/styles/ImgComparatorHandle.css');
+@import url('../src/styles/Roadmap.css');
 
 body {
   margin: 0;
@@ -60,6 +64,10 @@ code {
 
 .purple {
   color: #7E5EFF;
+}
+
+.cyan {
+  color: #1EEDD9;
 }
 
 .title {

@@ -1,0 +1,28 @@
+.roadmap {
+    padding: 0 20px 20px 20px;
+}
+
+.roadmap__gif__border {
+    background: #7E5EFF;
+    padding: 2px;
+    max-width: 1119px;
+    clip-path: polygon(4% 0, 100% 0, 100% 86%, 93% 100%, 0 100%, 0 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap__gif {
+    max-width: 1120px;
+    clip-path: polygon(4% 0, 100% 0, 100% 86%, 93% 100%, 0 100%, 0 8%);
+}
+
+.roadmap__gif__lines {
+    position: relative;
+    top: -17px;
+    left: 10px;
+}
+
+.roadmap__arrow {
+    margin-left: 450px;
+}
