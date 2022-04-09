@@ -1,0 +1,63 @@
+.in-short {
+    padding: 20px 20px;
+    background-image: url("../assets/svg/in-short-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 60%;
+}
+
+.in-short__card__title {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 5px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* Gray 6 */
+
+    color: #F2F2F2;
+}
+
+.in-short__card__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: -0.03em;
+
+    color: #FFFFFF;
+}
+
+.in-short__card__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.in-short__card__container_left {
+    justify-content: flex-start;
+}
+
+.in-short__card__container_right {
+    justify-content: flex-end;
+}
+
+.in-short__card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px;
+}
+
+.in-short__card__text__wrapper {
+    margin-left: 15px;
+}

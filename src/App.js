@@ -7,6 +7,7 @@ import {HowDoesThisWork} from "./sections/HowDoesThisWork";
 import {WhatsThePoint} from "./sections/WhatsThePoint";
 import {AugmentedReality} from "./sections/AugmentedReality";
 import {Roadmap} from "./sections/Roadmap";
+import {InShort} from "./sections/InShort";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                     <WhatsThePoint/>
                     <AugmentedReality/>
                     <Roadmap/>
+                    <InShort/>
                 </>
             )}
         </div>
