@@ -8,6 +8,7 @@ import {WhatsThePoint} from "./sections/WhatsThePoint";
 import {AugmentedReality} from "./sections/AugmentedReality";
 import {Roadmap} from "./sections/Roadmap";
 import {InShort} from "./sections/InShort";
+import {BuyNFT} from "./sections/BuyNFT";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                     <AugmentedReality/>
                     <Roadmap/>
                     <InShort/>
+                    <BuyNFT/>
                 </>
             )}
         </div>
