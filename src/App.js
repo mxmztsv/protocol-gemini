@@ -9,6 +9,8 @@ import {AugmentedReality} from "./sections/AugmentedReality";
 import {Roadmap} from "./sections/Roadmap";
 import {InShort} from "./sections/InShort";
 import {BuyNFT} from "./sections/BuyNFT";
+import {Partners} from "./sections/Partners";
+import {ProtocolGemini} from "./sections/ProtocolGemini";
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
                     <Roadmap/>
                     <InShort/>
                     <BuyNFT/>
+                    <Partners/>
+                    <ProtocolGemini/>
                 </>
             )}
         </div>

@@ -1,0 +1,267 @@
+.protocol {
+    padding: 100px 20px;
+    background-image: url("../assets/svg/protocol-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50% 0%;
+    /*background-position: center;*/
+}
+
+.follow-us__img__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.follow-us__img {
+    max-width: 410px;
+    /*margin-left: 100px;*/
+}
+
+.follow-us__info__title {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 144%;
+    margin-top: 0;
+    /* or 35px */
+
+    text-transform: uppercase;
+
+    /* Gray 6 */
+
+    color: #F2F2F2;
+}
+
+.follow-us__info__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 313px;
+    margin-bottom: 30px;
+    /* or 150% */
+
+    letter-spacing: -0.03em;
+
+    color: #FFFFFF;
+}
+
+.follow-us__info__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.follow-us__info__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-us__info {
+    max-width: 350px;
+}
+
+.follow-us__info__socials__item__img {
+    width: 65px;
+    clip-path: polygon(0 0, 79% 0, 100% 22%, 100% 100%, 0 100%, 0% 50%);
+    /*height: 82px;*/
+}
+
+.follow-us__info__socials__item__img:hover {
+    background: #0D0D0D;
+}
+
+.instagram {
+    background: rgba(255,41,234, .5);
+    background: radial-gradient(circle, rgba(255,41,234,.3) 0%, rgba(0,0,0,0) 100%);
+}
+
+.linkedin {
+    background: rgb(126,94,255);
+    background: radial-gradient(circle, rgba(126,94,255,.3) 0%, rgba(0,0,0,0) 100%);
+}
+
+.twitter {
+    background: rgb(30,237,217);
+    background: radial-gradient(circle, rgba(30,237,217,.3) 0%, rgba(0,0,0,0) 100%);
+}
+
+.discord {
+    background: rgb(126,94,255);
+    background: radial-gradient(circle, rgba(126,94,255,.3) 0%, rgba(0,0,0,0) 100%);
+}
+
+.form__title {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin: 0;
+
+    /* Gray 6 */
+
+    color: #F2F2F2;
+}
+
+.form__list__item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.form__list__item__marker {
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.form__list__item__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 595px;
+    margin: 0;
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.03em;
+
+    color: #FFFFFF;
+}
+
+.stay-in-the-loop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.form__wrapper {
+    background-image: url("../assets/svg/form-bg.svg");
+    background-repeat: no-repeat;
+    width: 846px;
+    height: 469px;
+    padding: 0 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    top: -30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    height: 188px;
+}
+
+.form__input {
+    border: none;
+    background: transparent;
+    background-image: linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(to right bottom, transparent calc(50% - 2px), #7E5EFF calc(50% - 1px), #7E5EFF 50%, transparent calc(50% + 1px)),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(#7E5EFF, #7E5EFF);
+    background-size: 100% 2px, 2px 75%, 3% 25%, 97% 2px, 2px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%, 0 0;
+    background-repeat: no-repeat;
+
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 97.1% 100%, 0 100%, 0% 50%);
+
+
+    /*background: transparent url("../assets/svg/input-border.svg") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    /*border-style: none;*/
+    width: 675px;
+    height: 80px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /*padding-left: 30px;*/
+    padding: 0 30px;
+    /* identical to box height, or 160% */
+
+    letter-spacing: -0.03em;
+
+    color: #FFFFFF;
+}
+
+.form__input:hover {
+    background-image: linear-gradient(#1EEDD9FF, #1EEDD9FF),
+    linear-gradient(#1EEDD9FF, #1EEDD9FF),
+    linear-gradient(to right bottom, transparent calc(50% - 2px), #1EEDD9FF calc(50% - 1px), #1EEDD9FF 50%, transparent calc(50% + 1px)),
+    linear-gradient(#1EEDD9FF, #1EEDD9FF),
+    linear-gradient(#1EEDD9FF, #1EEDD9FF);
+}
+
+.form__input:focus {
+    background: rgba(126, 94, 255, 0.2);
+    border: none;
+    outline: none;
+    background-image: linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(to right bottom, transparent calc(50% - 2px), #7E5EFF calc(50% - 1px), #7E5EFF 50%, transparent calc(50% + 1px)),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(#7E5EFF, #7E5EFF);
+    background-size: 100% 2px, 2px 75%, 3% 25%, 97% 2px, 2px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%, 0 0;
+    background-repeat: no-repeat;
+}
+
+.form__input:active {
+    background: rgba(126, 94, 255, 0.2);
+    border: none;
+    background-image: linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(to right bottom, transparent calc(50% - 2px), #7E5EFF calc(50% - 1px), #7E5EFF 50%, transparent calc(50% + 1px)),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(#7E5EFF, #7E5EFF);
+    background-size: 100% 2px, 2px 75%, 3% 25%, 97% 2px, 2px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%, 0 0;
+    background-repeat: no-repeat;
+}
+
+.form-btn {
+    background: transparent url("../assets/svg/subscribe-btn.svg") no-repeat;
+    border-style: none;
+    width: 242px;
+    height: 69px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.form-btn:hover {
+    background: #1EEDD9;
+    color: #0D0D0D;
+    clip-path: polygon(0 0, 92% 0, 100% 29%, 100% 100%, 9% 100%, 0 68%);
+    /*transition: .2s;*/
+}

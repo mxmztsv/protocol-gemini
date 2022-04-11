@@ -5,8 +5,8 @@
 .buy__nft__border {
     background: #7E5EFF;
     padding: 2px;
-    max-width: 559px;
-    min-height: 550px;
+    width: 559px;
+    height: 560px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,8 +14,10 @@
 }
 
 .buy__nft__img {
-    max-width: 560px;
-    min-height: 550px;
+    width: 558px;
+    height: 559px;
+    background: #0D0D0D;
+
     clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
 }
 
@@ -142,10 +144,35 @@
     margin-right: 25px;
 }
 
+.buy__navigation-btn_left:hover {
+    background-size: contain;
+    border-style: none;
+    background: transparent url("../assets/svg/nft-btn-left-hover.svg") no-repeat center;
+    width: 122px;
+    height: 117px;
+    margin-right: 25px;
+    transition: .2s;
+}
+
 .buy__navigation-btn_right {
     background-size: contain;
     border-style: none;
     background: transparent url("../assets/svg/nft-btn-right.svg") no-repeat 50% 40%;
     width: 122px;
     height: 117px;
+}
+
+.buy__navigation-btn_right:hover {
+    background-size: contain;
+    border-style: none;
+    background: transparent url("../assets/svg/nft-btn-right-hover.svg") no-repeat 50% 40%;
+    width: 122px;
+    height: 117px;
+    transition: .2s;
+}
+
+.buy__cubes {
+    position: absolute;
+    right: 15px;
+    top: 8000px;
 }

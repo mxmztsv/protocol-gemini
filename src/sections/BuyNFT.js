@@ -3,6 +3,7 @@ import {Grid} from "@mui/material";
 
 import nft1 from '../assets/gif/nft/nft1.gif'
 import nft2 from '../assets/gif/nft/nft2.gif'
+import cubes2 from '../assets/svg/cubes2.svg'
 
 export const BuyNFT = () => {
 
@@ -35,7 +36,7 @@ export const BuyNFT = () => {
         },
         {
             img: nft1,
-            name: 'one more'
+            name: 'another one'
         },
     ]
 
@@ -90,6 +91,7 @@ export const BuyNFT = () => {
                             <button className="buy__navigation-btn_right" onClick={selectNextNft}/>
                         </div>
                     </div>
+                    <img src={cubes2} className="buy__cubes"/>
 
                 </Grid>
             </Grid>
