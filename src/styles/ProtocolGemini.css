@@ -1,5 +1,5 @@
 .protocol {
-    padding: 100px 20px;
+    padding: 100px 20px 20px 20px;
     background-image: url("../assets/svg/protocol-bg.svg");
     background-repeat: no-repeat;
     background-size: 75%;
@@ -75,7 +75,7 @@
 }
 
 .follow-us__info__socials__item__img:hover {
-    background: #0D0D0D;
+    background: transparent;
 }
 
 .instagram {
@@ -110,6 +110,10 @@
     /* Gray 6 */
 
     color: #F2F2F2;
+}
+
+.form__list {
+    padding: 0 42px;
 }
 
 .form__list__item {
@@ -148,12 +152,19 @@
     margin-top: 120px;
 }
 
+/*.form__container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
 .form__wrapper {
     background-image: url("../assets/svg/form-bg.svg");
     background-repeat: no-repeat;
     width: 846px;
     height: 469px;
-    padding: 0 42px;
+    /*padding: 0 42px;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -168,6 +179,7 @@
     justify-content: space-between;
     margin-bottom: 36px;
     height: 188px;
+    padding: 0 42px;
 }
 
 .form__input {

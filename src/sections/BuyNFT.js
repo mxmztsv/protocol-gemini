@@ -71,7 +71,9 @@ export const BuyNFT = () => {
                                     }) }
                                 </div>
                             </div>
-                            <button className="buy__nft__btn">BUY</button>
+                            <button className="buy__nft__btn" onClick={() => {window.location.href = 'https://opensea.io/ProtocolGeminiVault'}}>
+                                BUY
+                            </button>
                         </div>
                     </div>
                 </Grid>

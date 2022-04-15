@@ -1,0 +1,17 @@
+.purple-bg {
+    position: absolute;
+    width: 100%;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.purple-bg__img {
+    height: 100%;
+    /*height: 50px;*/
+    width: 100%;
+    opacity: .8;
+}

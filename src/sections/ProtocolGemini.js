@@ -39,16 +39,16 @@ export const ProtocolGemini = () => {
                                         Please Be Sure To Submit Your Email To Be The First Being Notified About The Launch .
                                     </p>
                                     <div className="follow-us__info__socials">
-                                        <a href="#" className="follow-us__info__socials__item__link">
+                                        <a href="https://www.instagram.com/protocolgemini/" className="follow-us__info__socials__item__link">
                                             <img src={instagram} alt="instagram link" className="follow-us__info__socials__item__img instagram"/>
                                         </a>
-                                        <a href="#" className="follow-us__info__socials__item__link">
+                                        <a href="https://www.linkedin.com/company/protocol-gemini" className="follow-us__info__socials__item__link">
                                             <img src={linkedin} alt="linked in link" className="follow-us__info__socials__item__img linkedin"/>
                                         </a>
-                                        <a href="#" className="follow-us__info__socials__item__link">
+                                        <a href="https://twitter.com/ProtocolGemini" className="follow-us__info__socials__item__link">
                                             <img src={twitter} alt="twitter link" className="follow-us__info__socials__item__img twitter"/>
                                         </a>
-                                        <a href="#" className="follow-us__info__socials__item__link">
+                                        <a href="https://discord.gg/zASFUun8Tf" className="follow-us__info__socials__item__link">
                                             <img src={discord} alt="discord link" className="follow-us__info__socials__item__img discord"/>
                                         </a>
                                     </div>

@@ -3,8 +3,10 @@ import ReactCompareImage from 'react-compare-image';
 import {ImgComparatorHandle} from "../components/ImgComparatorHandle";
 import {Grid} from "@mui/material";
 
-import img1 from '../assets/img/reality-img1.png'
-import img2 from '../assets/img/reality-img2.png'
+import augmented1 from '../assets/img/augmented1.jpg'
+import augmented2 from '../assets/img/augmented2.jpg'
+import augmented3 from '../assets/img/augmented3.jpg'
+import augmented4 from '../assets/img/augmented4.jpg'
 import lines from '../assets/svg/lines-grey.svg'
 import cubes2 from '../assets/svg/cubes2.svg'
 import barcode from '../assets/svg/barcode.svg'
@@ -19,8 +21,8 @@ export const AugmentedReality = () => {
             <div className="reality__comparator__row">
                 <div className="reality__comparator__wrapper">
                     <div className="reality__comparator">
-                        <ReactCompareImage leftImage={img1}
-                                           rightImage={img2}
+                        <ReactCompareImage leftImage={augmented1}
+                                           rightImage={augmented2}
                                            sliderLineColor="#7E5EFF"
                                            sliderLineWidth={3}
                                            handle={<ImgComparatorHandle/>}
@@ -31,8 +33,8 @@ export const AugmentedReality = () => {
             <div className="reality__comparator__row_2">
                 <div className="reality__comparator__wrapper">
                     <div className="reality__comparator">
-                        <ReactCompareImage leftImage={img2}
-                                           rightImage={img1}
+                        <ReactCompareImage leftImage={augmented3}
+                                           rightImage={augmented4}
                                            sliderLineColor="#7E5EFF"
                                            sliderLineWidth={3}
                                            handle={<ImgComparatorHandle/>}

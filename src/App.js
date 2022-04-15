@@ -11,6 +11,9 @@ import {InShort} from "./sections/InShort";
 import {BuyNFT} from "./sections/BuyNFT";
 import {Partners} from "./sections/Partners";
 import {ProtocolGemini} from "./sections/ProtocolGemini";
+import {Footer} from "./sections/Footer";
+import {PurpleBackground} from "./components/PurpleBackground";
+import {PurpleBackgroundFooter} from "./components/PurpleBackgroundFooter";
 
 function App() {
 
@@ -21,15 +24,25 @@ function App() {
             {loading ? <Loader setLoading={setLoading}/> : (
                 <>
                     <Main/>
+                    {/*<PurpleBackground height={1800} y={500}/>*/}
+                    <PurpleBackground height={2000} y={300}/>
                     <About/>
+                    <PurpleBackground height={900} y={1800}/>
                     <HowDoesThisWork/>
+                    <PurpleBackground height={2200} y={2500}/>
                     <WhatsThePoint/>
+                    <PurpleBackground height={1500} y={4200}/>
                     <AugmentedReality/>
+                    <PurpleBackground height={2000} y={5400}/>
                     <Roadmap/>
+                    <PurpleBackground height={900} y={7100}/>
                     <InShort/>
                     <BuyNFT/>
+                    <PurpleBackground height={2000} y={7900}/>
                     <Partners/>
                     <ProtocolGemini/>
+                    <PurpleBackgroundFooter height={1500} y={9009}/>
+                    <Footer/>
                 </>
             )}
         </div>

@@ -1,5 +1,6 @@
 .main {
-    background-image: url("../assets/img/main-bg.png");
+    /*background-image: url("../assets/img/main-bg.png");*/
+    background-image: url("../assets/img/main-bg-border-correct-color.png");
     /*background-image: url("../assets/gif/Zoom-PG-Background.gif");*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,6 +9,7 @@
     height: 850px;
     min-height: 100vh;
     position: relative;
+    /*z-index: -1;*/
 
     animation-name: bg;
     animation-duration: 5s;
@@ -249,7 +251,7 @@
     height: 80px;
     align-items: center;
     justify-content: center;
-    background: #0D0D0D;
+    background: #050505;
     width: 350px;
     position: absolute;
     bottom: 0;

@@ -1,7 +1,7 @@
 .work {
     padding: 0 20px;
-    background: rgb(126,94,255);
-    background: radial-gradient(circle, rgba(126,94,255,.5) 0%, rgba(13,13,13,1) 50%, rgba(13,13,13,1) 100%);
+    /*background: rgb(126,94,255);*/
+    /*background: radial-gradient(circle, rgba(126,94,255,.5) 0%, rgba(13,13,13,1) 50%, rgba(13,13,13,1) 100%);*/
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 100% 100%;
@@ -15,7 +15,7 @@
     position: absolute;
     /*right: 380px;*/
     right: 25%;
-    top: 1880px;
+    top: 1785px;
 }
 
 .work__card__bg {
