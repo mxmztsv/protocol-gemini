@@ -76,14 +76,14 @@
     position: relative;
     bottom: 32px;
     left: 0;
-    z-index: 99999999;
+    z-index: 999;
 }
 
 .about__video-player__lines {
     position: relative;
     bottom: 70px;
     right: -120px;
-    z-index: 9999999999;
+    z-index: 999;
 }
 
 .about__planet {

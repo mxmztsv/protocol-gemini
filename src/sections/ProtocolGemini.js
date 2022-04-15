@@ -84,8 +84,8 @@ export const ProtocolGemini = () => {
                                 </div>
                             </div>
                             <form onSubmit={handleSubmit(onSubmit)} className="form">
-                                <input className="form__input" placeholder="Email" {...register("email", { required: true, pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })} />
-                                <button type="submit" className="form-btn">Subscribe</button>
+                                <input className="protocol__form__input form__input" placeholder="Email" {...register("email", { required: true, pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })} />
+                                <button type="submit" className="protocol__form-btn form-btn">Subscribe</button>
                             </form>
                         </div>
                     </div>

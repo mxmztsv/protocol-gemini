@@ -1,10 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import {Container} from "@mui/material";
 
 import logo from '../assets/svg/logo.svg'
+import {JoinUs} from "./JoinUs";
 // import logo from '../assets/svg/Protocol-Gemini_Flat 2.svg'
 
 export const Header = () => {
+
+    const [isFormOpen, setIsFormOpen] = useState(false)
+
+    const toggleOpenCloseForm = () => {
+        setIsFormOpen(!isFormOpen)
+    }
+
     return (
         <header>
             {/*<Container disableGutters={true}>*/}
@@ -18,11 +26,14 @@ export const Header = () => {
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                         <div className="header__btn__wrapper">
-                            <button className="btn">JOIN US</button>
+                            <button className="btn" onClick={toggleOpenCloseForm}>
+                                JOIN US
+                            </button>
                         </div>
                     </div>
                 </div>
             {/*</Container>*/}
+            { isFormOpen && <JoinUs close={toggleOpenCloseForm}/> }
         </header>
     )
 }
