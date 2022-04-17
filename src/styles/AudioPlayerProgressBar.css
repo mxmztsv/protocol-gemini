@@ -5,7 +5,13 @@
     justify-content: space-between;
     height: 100%;
     /*position: relative;*/
-    width: 100%;
+    width: 190px;
+}
+
+@media (max-width: 900px) {
+    .audio-player-progress-bar {
+        width: 100px;
+    }
 }
 
 .audio-player-progress-bar__item {

@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import {Container} from "@mui/material";
+import {Container, Hidden} from "@mui/material";
 
 import logo from '../assets/svg/logo.svg'
 import {JoinUs} from "./JoinUs";
-// import logo from '../assets/svg/Protocol-Gemini_Flat 2.svg'
+import logoSmall from '../assets/svg/Protocol-Gemini_Flat 3.svg'
 
 export const Header = () => {
 
@@ -17,20 +17,30 @@ export const Header = () => {
         <header>
             {/*<Container disableGutters={true}>*/}
                 <div className="header__wrapper">
-                    <img src={logo} alt="logo" className="header__logo"/>
-                    <div className="right-col">
-                        <ul className="navbar">
-                            <li><a href="#">TQN//VIP//NFTs</a></li>
-                            <li><a href="#">What’s This?</a></li>
-                            <li><a href="#">Blackpaper</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                        <div className="header__btn__wrapper">
-                            <button className="btn" onClick={toggleOpenCloseForm}>
-                                JOIN US
-                            </button>
+                    <Hidden lgDown>
+                        <img src={logo} alt="logo" className="header__logo"/>
+                    </Hidden>
+                    <Hidden lgUp mdDown>
+                        <img src={logoSmall} alt="logo" className="header__logo"/>
+                    </Hidden>
+                    <Hidden mdUp>
+                        <img src={logo} alt="logo" className="header__logo"/>
+                    </Hidden>
+                    <Hidden mdDown>
+                        <div className="right-col">
+                            <ul className="navbar">
+                                <li><a href="#">TQN//VIP//NFTs</a></li>
+                                <li><a href="#">What’s This?</a></li>
+                                <li><a href="#">Blackpaper</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                            <div className="header__btn__wrapper">
+                                <button className="btn" onClick={toggleOpenCloseForm}>
+                                    JOIN US
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                    </Hidden>
                 </div>
             {/*</Container>*/}
             { isFormOpen && <JoinUs close={toggleOpenCloseForm}/> }

@@ -1,0 +1,57 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu__content {
+    background: #050505;
+    padding: 34px 24px 24px 24px;
+    border-radius: 10px;
+}
+
+.exit__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    /*width: 200px;*/
+    /*position: fixed;*/
+    /*right: 0;*/
+}
+
+.menu__list__item {
+    margin: 0 0 20px 0;
+}
+
+.menu__list__item__text{
+    font-family: 'Monument Extended', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.menu__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 50px 0;
+}
+
+.menu__btn__join-us__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*height: 64px;*/
+    /*width: 100%;*/
+    margin-top: 10px;
+}

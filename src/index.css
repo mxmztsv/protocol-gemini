@@ -17,6 +17,11 @@
 @import url('../src/styles/Footer.css');
 @import url('../src/styles/PurpleBackground.css');
 @import url('../src/styles/JoinUs.css');
+@import url('../src/styles/Menu.css');
+
+* {
+  outline: none;
+}
 
 body {
   margin: 0;
