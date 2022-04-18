@@ -1,7 +1,7 @@
 import React from "react";
 import ReactCompareImage from 'react-compare-image';
 import {ImgComparatorHandle} from "../components/ImgComparatorHandle";
-import {Grid} from "@mui/material";
+import {Grid, Hidden} from "@mui/material";
 
 import augmented1 from '../assets/img/augmented1.jpg'
 import augmented2 from '../assets/img/augmented2.jpg'
@@ -63,12 +63,16 @@ export const AugmentedReality = () => {
                             memorable experience. You can put your mark on the world and share it with whomever you
                             want!
                         </p>
-                        <img src={lines} className="reality__lines"/>
+                        <Hidden smDown>
+                            <img src={lines} className="reality__lines"/>
+                        </Hidden>
                     </div>
                 </Grid>
             </Grid>
-            <img src={barcode} className="reality__barcode"/>
-            <img src={cubes2} className="reality__cubes"/>
+            <Hidden lgDown>
+                <img src={barcode} className="reality__barcode"/>
+                <img src={cubes2} className="reality__cubes"/>
+            </Hidden>
         </section>
     )
 

@@ -6,11 +6,13 @@ import linkedin from "../assets/svg/linkedin.svg";
 import twitter from "../assets/svg/twitter.svg";
 import discord from "../assets/svg/discord.svg";
 
-// todo: адаптив для меню
+export const Menu = ({ close, toggleOpenCloseForm }) => {
 
-//todo: плеер музыки не нажимается под меню (контейнер перекрывает)
+    const openFormHandler = () => {
+        close()
+        toggleOpenCloseForm()
+    }
 
-export const Menu = ({ close }) => {
     return (
         <div className="menu">
             <div className="exit__container">
@@ -60,7 +62,10 @@ export const Menu = ({ close }) => {
                 </div>
 
                 <div className="menu__btn__join-us__wrapper">
-                    <button className="join-us__form-btn">Join us</button>
+                    {/*<button className="join-us__form-btn">Join us</button>*/}
+                    <button className="btn menu__join-us__btn" onClick={openFormHandler}>
+                        Join us
+                    </button>
                 </div>
 
             </div>

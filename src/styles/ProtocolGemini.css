@@ -55,6 +55,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    max-width: 365px;
 }
 
 .follow-us__info__container {

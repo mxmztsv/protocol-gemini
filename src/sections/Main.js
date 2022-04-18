@@ -47,22 +47,22 @@ export const Main = () => {
                     <AudioPlayer/>
                 </div>
             </div>
-            <Hidden mdUp>
-                { isMenuOpened ? (
-                    <Menu close={toggleOpenCloseMenu}/>
-                ) : (
-                    <div className="menu__btn__container">
-                        <div className="menu__btn__wrapper" onClick={toggleOpenCloseMenu}>
-                            <p className="menu__btn__text">
-                                MENU
-                            </p>
-                            <img src={menu} alt="menu button" className="menu__btn__img"/>
-                        </div>
-                        <div className="menu__btn__line"/>
-                    </div>
-                )}
+            {/*<Hidden mdUp>*/}
+            {/*    { isMenuOpened ? (*/}
+            {/*        <Menu close={toggleOpenCloseMenu}/>*/}
+            {/*    ) : (*/}
+            {/*        <div className="menu__btn__container">*/}
+            {/*            <div className="menu__btn__wrapper" onClick={toggleOpenCloseMenu}>*/}
+            {/*                <p className="menu__btn__text">*/}
+            {/*                    MENU*/}
+            {/*                </p>*/}
+            {/*                <img src={menu} alt="menu button" className="menu__btn__img"/>*/}
+            {/*            </div>*/}
+            {/*            <div className="menu__btn__line"/>*/}
+            {/*        </div>*/}
+            {/*    )}*/}
 
-            </Hidden>
+            {/*</Hidden>*/}
             {/*</div>*/}
             <div className="blind_bottom"/>
         </section>

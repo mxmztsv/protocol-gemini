@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Grid} from "@mui/material";
+import {Container, Grid, Hidden} from "@mui/material";
 import {VideoPlayer} from "../components/VideoPlayer";
 
 import dots from '../assets/svg/video-dots.svg'
@@ -8,20 +8,24 @@ import arrow from '../assets/svg/arrow-bottom-left.svg'
 import arrowsCorners from '../assets/svg/arrows-corners.svg'
 import planet from '../assets/svg/planet.svg'
 import cubes from '../assets/svg/cubes1.svg'
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export const About = () => {
+
+    const isSm = useMediaQuery('(max-width:600px)')
+
     return (
         <section className="about">
             {/*<Container disableGutters={false}>*/}
-                <Grid container>
-                    <Grid item md={7} xs={12}>
+                <Grid container direction={ isSm ? "column-reverse" : "row"}>
+                    <Grid item sm={7} xs={12}>
                         <div className="about__video-player">
                             <VideoPlayer/>
                         </div>
                         <img src={dots} className="about__video-player__dots"/>
                         <img src={lines} className="about__video-player__lines"/>
                     </Grid>
-                    <Grid item md={5} xs={12}>
+                    <Grid item sm={5} xs={12}>
                         <div className="about__text__wrapper">
                             <h3 className="about__title">
                                 ABOUT THE PROJECT
@@ -49,12 +53,27 @@ export const About = () => {
 
                             </p>
                         </div>
+
                     </Grid>
+
                 </Grid>
-            <img src={planet} className="about__planet"/>
-            <img src={arrowsCorners} className="about__arrows-corners"/>
-            <img src={arrow} className="about__arrow"/>
-            <img src={cubes} className="about__cubes"/>
+            <Hidden smDown>
+                <img src={planet} className="about__planet"/>
+                <img src={arrowsCorners} className="about__arrows-corners"/>
+            </Hidden>
+            <Hidden lgDown>
+                <img src={cubes} className="about__cubes"/>
+                <img src={arrow} className="about__arrow"/>
+            </Hidden>
+            <Hidden smUp>
+                <div className="about__particles__row">
+                    <div className="left-col">
+                        <img src={planet} className="about__planet"/>
+                        <img src={arrowsCorners} className="about__arrows-corners"/>
+                    </div>
+                    <img src={arrow} className="about__arrow"/>
+                </div>
+            </Hidden>
             {/*</Container>*/}
         </section>
     )

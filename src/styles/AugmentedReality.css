@@ -10,7 +10,7 @@
     /*display: flex;*/
     /*align-items: center;*/
     /*justify-content: flex-start;*/
-    margin: 80px 0 97px 0;
+    margin: 40px 0 40px 0;
 }
 
 .reality__comparator__row_2 {
@@ -66,4 +66,18 @@
     left: 20px;
     top: 5480px;
     opacity: .5;
+}
+
+@media (max-width: 900px) {
+    .reality__text {
+        /*width: 100%;*/
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .reality {
+        padding: 30px 20px 0px 20px;
+    }
+
 }

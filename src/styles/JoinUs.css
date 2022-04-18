@@ -18,7 +18,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 9999999;
 }
 
 .join-us__form__wrapper {
@@ -45,6 +45,7 @@
 
 .join-us__form__input {
     border: none;
+    border-radius: 0px;
     background: transparent;
     background-image: linear-gradient(#7E5EFF, #7E5EFF),
     linear-gradient(#7E5EFF, #7E5EFF),
@@ -57,7 +58,9 @@
 
     clip-path: polygon(0 0, 100% 0, 100% 70%, 93% 100%, 0 100%, 0% 50%);
 
-    width: 315px;
+    /*width: 315px;*/
+    width: 100%;
+    box-sizing: border-box;
     height: 72px;
     margin: 10px 0;
 
@@ -105,10 +108,18 @@
 .textarea {
     resize: none;
     height: 100px;
-    width: 315px;
+    /*width: 315px;*/
+    /*width: 89.5%;*/
+    /*width: 93%;*/
+    width: 100%;
+    box-sizing: border-box;
     padding: 20px 20px;
+    /*display: flex;*/
+    /*flex: 1;*/
     margin: 10px 0;
     outline: none;
+    border-radius: 0px;
+
 
     border: none;
     background: transparent;
@@ -187,6 +198,7 @@
     border-style: none;
 
     width: 350px;
+    /*width: 100%;*/
     height: 64px;
     margin: 10px 0;
 
@@ -219,6 +231,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
+    top: -1px;
 }
 
 .join-us__form__exit {
@@ -255,4 +269,16 @@
 .join-us__form__exit__img {
     height: 21px;
     width: 21px;
+}
+
+.join-us__btn__container {
+    width: 100%;
+    height: 64px;
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .join-us__form__container {
+        width: 100%;
+    }
 }

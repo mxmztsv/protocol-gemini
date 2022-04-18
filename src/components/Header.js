@@ -4,10 +4,18 @@ import {Container, Hidden} from "@mui/material";
 import logo from '../assets/svg/logo.svg'
 import {JoinUs} from "./JoinUs";
 import logoSmall from '../assets/svg/Protocol-Gemini_Flat 3.svg'
+import {Menu} from "./Menu";
+import menu from "../assets/svg/menu.svg";
 
 export const Header = () => {
 
     const [isFormOpen, setIsFormOpen] = useState(false)
+    const [isMenuOpened, setIsMenuOpened] = useState(false)
+
+
+    const toggleOpenCloseMenu = () => {
+        setIsMenuOpened(!isMenuOpened)
+    }
 
     const toggleOpenCloseForm = () => {
         setIsFormOpen(!isFormOpen)
@@ -43,6 +51,22 @@ export const Header = () => {
                     </Hidden>
                 </div>
             {/*</Container>*/}
+            <Hidden mdUp>
+                { isMenuOpened ? (
+                    <Menu close={toggleOpenCloseMenu} toggleOpenCloseForm={toggleOpenCloseForm}/>
+                ) : (
+                    <div className="menu__btn__container">
+                        <div className="menu__btn__wrapper" onClick={toggleOpenCloseMenu}>
+                            <p className="menu__btn__text">
+                                MENU
+                            </p>
+                            <img src={menu} alt="menu button" className="menu__btn__img"/>
+                        </div>
+                        <div className="menu__btn__line"/>
+                    </div>
+                )}
+
+            </Hidden>
             { isFormOpen && <JoinUs close={toggleOpenCloseForm}/> }
         </header>
     )

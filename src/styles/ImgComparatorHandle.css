@@ -7,3 +7,10 @@
     width: 52px;
     height: 52px;
 }
+
+@media (max-width: 600px) {
+    .comparator-handle {
+        width: 36px;
+        height: 35px;
+    }
+}

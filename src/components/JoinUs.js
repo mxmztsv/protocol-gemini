@@ -26,7 +26,10 @@ export const JoinUs = ({close}) => {
                                placeholder="Subject" {...register("subject", {required: true})} />
                         <textarea className="textarea"
                                placeholder="Your message (optional)" {...register("message")} />
-                        <button type="submit" className="join-us__form-btn">Join us</button>
+                        {/*<button type="submit" className="join-us__form-btn">Join us</button>*/}
+                        <div className="join-us__btn__container">
+                            <button type="submit" className="btn_invert">Join us</button>
+                        </div>
                     </form>
                 </div>
                 <div className="join-us__form__exit__wrapper" onClick={close}>

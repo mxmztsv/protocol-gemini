@@ -70,6 +70,7 @@
     background: #1EEDD9;
     padding: 1px;
     clip-path: polygon(5% 0, 100% 0, 100% 88%, 93% 100%, 0 100%, 0 9%);
+    margin-right: 50px;
 }
 
 .about__video-player__dots {
@@ -77,13 +78,19 @@
     bottom: 32px;
     left: 0;
     z-index: 999;
+    max-width: 30%;
+
 }
 
 .about__video-player__lines {
     position: relative;
     bottom: 70px;
-    right: -120px;
+    /*bottom: 15%;*/
+    /*top: 0;*/
+    /*right: -120px;*/
+    left: 10%;
     z-index: 999;
+    max-width: 35%;
 }
 
 .about__planet {
@@ -101,8 +108,12 @@
 
 .about__arrow {
     position: absolute;
-    bottom: -1050px;
-    right: 180px;
+    /*bottom: -1050px;*/
+    right: 0px;
+    /*margin-right: 180px;*/
+    margin-right: 10%;
+    /*bottom: 0;*/
+    /*right: -500px;*/
 }
 
 .about__cubes {
@@ -110,3 +121,56 @@
     bottom: -450px;
     right: 15px;
 }
+
+.about__particles__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .about__video-player__lines {
+        bottom: 55px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .about__video-player {
+        margin: 30px 0;
+    }
+
+    .about__video-player__lines {
+        bottom: 75px;
+    }
+
+    .about__video-player__dots {
+        bottom: 50px;
+    }
+
+    .about {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .about__title {
+        margin: 0;
+    }
+
+    .about__text {
+        max-width: 100%;
+    }
+
+    .about__arrow {
+        width: 38px;
+        height: 38px;
+        position: relative;
+        top: -24px;
+        margin-right: 0px;
+        /*position: static;*/
+        /*margin: 0;*/
+        /*bottom: -1072px;*/
+    }
+}
+

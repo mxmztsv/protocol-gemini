@@ -10,33 +10,73 @@
     margin-bottom: 100px;
 }
 
-.point__wrapper {
+.point__container {
     display: flex;
     flex-direction: row;
 }
 
-.point__wrapper-right {
+.point__container_right {
+    justify-content: flex-end;
+}
+
+.point__wrapper {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    /*width: 830px;*/
+}
+
+.point__wrapper_right {
     justify-content: flex-end;
 }
 
 .point__screen__img {
     width: 239px;
-    height: 519px;
+    height: auto;
+    /*height: 519px;*/
 }
 
 .point__card {
-    background-image: url("../assets/svg/point-bg.svg");
-    background-repeat: no-repeat;
+    /*background-image: url("../assets/svg/point-bg.svg");*/
+    /*background-repeat: no-repeat;*/
     /*background-size: 100% 50%;*/
+
+
+    background-image:   linear-gradient(to right bottom, transparent calc(50% - 1.5px), #7E5EFF calc(50% - 2px), #7E5EFF 50%, transparent calc(50% + 1px)),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(to right bottom, transparent calc(50% - 2px), #7E5EFF calc(50% - 1px), #7E5EFF 50%, transparent calc(50% + 1px)),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(#7E5EFF, #7E5EFF),
+    linear-gradient(180deg, rgba(126, 94, 255, 0.61) 0%, rgba(126, 94, 255, 0.14) 100%);
+
+    background-size: 5% 10%, 95.3% 2px, 2px 90.5%, 5% 10%, 95% 2px, 2px 90.5%, 100% 100%;
+    background-position: 0% 0%, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%;
+    background-repeat: no-repeat;
+
+    clip-path: polygon(4.5% 0, 100% 0, 100% 90.5%, 95.3% 100%, 0 100%, 0 9%);
+
+    box-sizing: border-box;
+
     height: 278px;
+    /*min-width: 560px;*/
+    /*width: 100%;*/
     width: 560px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     margin: 70px 30px 0 30px;
-    /*padding: 30px 40px;*/
+    padding: 30px 40px;
     /*width: 500px;*/
+}
+
+.point__card__title__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .point__card__title {
@@ -45,10 +85,12 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    margin: 30px 0 15px 0;
+    box-sizing: border-box;
+    margin: 0px 0 15px 0;
     /*margin-left: 80px;*/
     /*padding-left: 40px;*/
-    width: 85%;
+    /*width: 100%;*/
+    max-width: 450px;
     /* identical to box height */
 
     text-transform: uppercase;
@@ -97,4 +139,107 @@
     left: 20%;
     top: -11px;
 }
+
+@media (max-width: 930px) {
+    .point__card {
+        /*width: 450px;*/
+    }
+
+    .point__wrapper {
+        /*width: 700px;*/
+    }
+}
+
+@media (max-width: 860px) {
+
+    .point__card {
+        width: 450px;
+    }
+
+    /*.point__wrapper {*/
+    /*    flex-direction: column;*/
+    /*    align-items: center;*/
+    /*    justify-content: flex-start;*/
+    /*}*/
+
+}
+
+@media (max-width: 750px) {
+
+    .point__card {
+        width: 400px;
+        padding: 30px 20px;
+    }
+
+    .point__screen__img {
+        width: 180px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .point__card {
+        width: 400px;
+        /*padding: 30px 10px;*/
+        margin: 70px 10px 0 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .point__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+
+    .point__container {
+        justify-content: center;
+    }
+
+    .point__card__container {
+        width: 100%;
+    }
+
+    .point__card {
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        padding: 90px 30px 30px 30px;
+        margin: 0;
+    }
+
+    .point__screen__img {
+        width: 206px;
+        height: auto;
+        position: relative;
+        top: 70px;
+        z-index: 9;
+    }
+
+    .point__title {
+        margin-bottom: 0px;
+    }
+
+    .point {
+        padding: 0 20px 30px 20px;
+        background-image: none;
+    }
+
+    .point__card__lines {
+        width: 117px;
+        height: 14px;
+    }
+
+    .point__card__lines-right {
+        left: 50%;
+    }
+
+}
+
 

@@ -13,7 +13,8 @@
 }
 
 .roadmap__gif {
-    max-width: 1120px;
+    /*max-width: 1120px;*/
+    width: 100%;
     clip-path: polygon(4% 0, 100% 0, 100% 86%, 93% 100%, 0 100%, 0 8%);
 }
 
@@ -25,4 +26,21 @@
 
 .roadmap__arrow {
     margin-left: 450px;
+}
+
+@media (max-width: 800px) {
+
+    .roadmap__title {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .roadmap__arrow {
+        width: 38px;
+        margin: 0;
+        position: relative;
+        top: -25px;
+    }
 }
