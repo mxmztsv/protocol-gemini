@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/protocol-gemini/static/css/main.4bda668c.css",
-    "main.js": "/protocol-gemini/static/js/main.79fa58d1.js",
+    "main.css": "/protocol-gemini/static/css/main.f119c852.css",
+    "main.js": "/protocol-gemini/static/js/main.00793b53.js",
     "static/js/787.ff2947cf.chunk.js": "/protocol-gemini/static/js/787.ff2947cf.chunk.js",
     "static/media/Intro.mp4": "/protocol-gemini/static/media/Intro.e195d374322bb02338a9.mp4",
     "static/media/Zoom-PG-Background.gif": "/protocol-gemini/static/media/Zoom-PG-Background.e144c20b355aece68e53.gif",
@@ -57,7 +57,6 @@
     "index.html": "/protocol-gemini/index.html",
     "static/media/point-circle-bg.svg": "/protocol-gemini/static/media/point-circle-bg.5635c43cb009b84461ec.svg",
     "static/media/protocol-bg.svg": "/protocol-gemini/static/media/protocol-bg.0628eafa0d30a21a099d.svg",
-    "static/media/point-bg.svg": "/protocol-gemini/static/media/point-bg.af89e2c20df8a2145341.svg",
     "static/media/arrows-corners.svg": "/protocol-gemini/static/media/arrows-corners.c4abec3e8ad6463279fc8896e1002a1f.svg",
     "static/media/works-cards-bg.svg": "/protocol-gemini/static/media/works-cards-bg.542ce5a49113861b9b70.svg",
     "static/media/in-short-bg.svg": "/protocol-gemini/static/media/in-short-bg.30971e294de21cd7a94a.svg",
@@ -73,12 +72,12 @@
     "static/media/join-us-btn.svg": "/protocol-gemini/static/media/join-us-btn.dc7ffe57c5c64b43c23e.svg",
     "static/media/marker.svg": "/protocol-gemini/static/media/marker.1d0adfd3b1c191fbdfb725280221fa2d.svg",
     "static/media/arrow-bottom-left.svg": "/protocol-gemini/static/media/arrow-bottom-left.74539d37bd72b004144bdaa253427562.svg",
-    "main.4bda668c.css.map": "/protocol-gemini/static/css/main.4bda668c.css.map",
-    "main.79fa58d1.js.map": "/protocol-gemini/static/js/main.79fa58d1.js.map",
+    "main.f119c852.css.map": "/protocol-gemini/static/css/main.f119c852.css.map",
+    "main.00793b53.js.map": "/protocol-gemini/static/js/main.00793b53.js.map",
     "787.ff2947cf.chunk.js.map": "/protocol-gemini/static/js/787.ff2947cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bda668c.css",
-    "static/js/main.79fa58d1.js"
+    "static/css/main.f119c852.css",
+    "static/js/main.00793b53.js"
   ]
 }
