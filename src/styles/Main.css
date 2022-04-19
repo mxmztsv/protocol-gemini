@@ -313,7 +313,7 @@
     background: #050505;
     width: 350px;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     right: 0;
     clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
 
@@ -342,7 +342,8 @@
     justify-content: flex-end;
     z-index: 999999;
     /*background: #1eedd9;*/
-    clip-path: polygon(52% 75%, 67% 0, 100% 0, 100% 100%, 0 100%, 0 75%);
+    /*clip-path: polygon(52% 75%, 67% 0, 100% 0, 100% 100%, 0 100%, 0 75%);*/
+    clip-path: polygon(calc(100% - 200px) 75%, calc(100% - 140px) 0, 100% 0, 100% 100%, 0 100%, 0 75%);
 }
 
 .menu__btn__line {

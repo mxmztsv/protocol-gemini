@@ -14,6 +14,7 @@ import {ProtocolGemini} from "./sections/ProtocolGemini";
 import {Footer} from "./sections/Footer";
 import {PurpleBackground} from "./components/PurpleBackground";
 import {PurpleBackgroundFooter} from "./components/PurpleBackgroundFooter";
+import {Hidden} from "@mui/material";
 
 function App() {
 
@@ -24,24 +25,35 @@ function App() {
             {loading ? <Loader setLoading={setLoading}/> : (
                 <>
                     <Main/>
-                    <PurpleBackground height={2000} y={300}/>
                     <About/>
-                    <PurpleBackground height={900} y={1800}/>
                     <HowDoesThisWork/>
-                    <PurpleBackground height={2200} y={2500}/>
                     <WhatsThePoint/>
-                    <PurpleBackground height={1500} y={4200}/>
                     <AugmentedReality/>
-                    <PurpleBackground height={2000} y={5400}/>
                     <Roadmap/>
-                    <PurpleBackground height={900} y={7100}/>
                     <InShort/>
                     <BuyNFT/>
-                    <PurpleBackground height={2000} y={7900}/>
                     <Partners/>
                     <ProtocolGemini/>
-                    <PurpleBackgroundFooter height={1500} y={8866}/>
                     <Footer/>
+
+                    <Hidden lgDown>
+                        <PurpleBackground height={2000} y={300}/>
+                        <PurpleBackground height={900} y={1800}/>
+                        <PurpleBackground height={2200} y={2500}/>
+                        <PurpleBackground height={1500} y={4200}/>
+                        <PurpleBackground height={2000} y={5400}/>
+                        <PurpleBackground height={900} y={6950}/>
+                        <PurpleBackground height={2200} y={7700}/>
+                        <PurpleBackgroundFooter height={1500} y={8952}/>
+                    </Hidden>
+
+                    <Hidden lgUp>
+                        <PurpleBackground height={1800} y={300}/>
+                        <PurpleBackground height={1100} y={1700}/>
+                        <PurpleBackground height={2600} y={2500}/>
+                        <PurpleBackground height={2700} y={5100}/>
+                        <PurpleBackground height={2300} y={6800}/>
+                    </Hidden>
                 </>
             )}
         </div>

@@ -80,7 +80,6 @@ button {
 }
 
 .btn_invert {
-  /*border: 2px solid #1EEDD9;*/
   border-style: none;
   background: transparent;
   height: 100%;
@@ -90,28 +89,18 @@ button {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.035em;
-  /*clip-path: polygon(7% 0, 100% 0, 100% 30%, 100% 70%, 93% 100%, 30% 100%, 0 100%, 0 100%, 0% 30%);*/
-
-  /*background-image:   linear-gradient(to right bottom, transparent calc(50% - 1.5px), #1EEDD9 calc(50% - 2px), #1EEDD9 50%, transparent calc(50% + 1px)),*/
-  /*linear-gradient(#1EEDD9, #1EEDD9),*/
-  /*linear-gradient(#1EEDD9, #1EEDD9),*/
-  /*linear-gradient(to right bottom, transparent calc(50% - 2px), #1EEDD9 calc(50% - 1px), #1EEDD9 50%, transparent calc(50% + 1px)),*/
-  /*linear-gradient(#1EEDD9, #1EEDD9),*/
-  /*linear-gradient(#1EEDD9, #1EEDD9);*/
 
   background-image:
   linear-gradient(#1EEDD9, #1EEDD9),
   linear-gradient(to left bottom, transparent calc(50% - 2px), #1EEDD9 calc(50% - 1px), #1EEDD9 50%, transparent calc(50% + 1px)),
   linear-gradient(#1EEDD9, #1EEDD9),
   linear-gradient(#1EEDD9, #1EEDD9),
-  linear-gradient(to left bottom, transparent calc(50% - 2px), #1EEDD9 calc(50% - 1px), #1EEDD9 50%, transparent calc(50% + 1px)),
+  linear-gradient(to left bottom, transparent calc(50% - 2px), #1EEDD9 calc(50% - 0.5px), #1EEDD9 50%, transparent calc(50% + 1px)),
   linear-gradient(#1EEDD9, #1EEDD9);
 
-  /*background-size: 9% 30%, 92% 2px, 2px 70%, 8% 30%, 92% 2px, 2px 72%;*/
-  background-size: 93.5% 1.5px, 7% 31%, 1.5px 70%, 93% 1.5px, 7% 30%, 1.5px 70%;
+  background-size: calc(100% - 19px) 1.5px, 20px 22px, 1.5px calc(100% - 20px), calc(100% - 20px) 1.5px, 20px 22px, 1.5px calc(100% - 21.5px);
   background-position: 0% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0;
   background-repeat: no-repeat;
-  /*transition: .3s ease;*/
   text-transform: uppercase;
 
   color: #FFFFFF
@@ -119,7 +108,7 @@ button {
 
 .btn_invert:hover {
   background: #1EEDD9;
-  clip-path: polygon(0 0, 93% 0, 100% 30%, 100% 100%, 7% 100%, 0 70%);
+  clip-path: polygon(0 0, calc(100% - 19px) 0, 100% 22px, 100% 100%, 20px 100%, 0 calc(100% - 21.5px));
   color: #0D0D0D;
   transition-duration: .3s;
 }

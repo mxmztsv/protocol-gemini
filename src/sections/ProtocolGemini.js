@@ -20,7 +20,7 @@ export const ProtocolGemini = () => {
             <h2 className="title">
                 Protocol: <span className="purple">Gemini</span>
             </h2>
-            <Container>
+            <Container disableGutters>
                 <div className="follow-us__row">
                     <Grid container>
                         <Grid item md={6} xs={12}>
@@ -85,7 +85,10 @@ export const ProtocolGemini = () => {
                             </div>
                             <form onSubmit={handleSubmit(onSubmit)} className="form">
                                 <input className="protocol__form__input form__input" placeholder="Email" {...register("email", { required: true, pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })} />
-                                <button type="submit" className="protocol__form-btn form-btn">Subscribe</button>
+                                {/*<button type="submit" className="protocol__form-btn form-btn">Subscribe</button>*/}
+                                <div className="form__btn__wrapper">
+                                    <button type="submit" className="btn_invert">Subscribe</button>
+                                </div>
                             </form>
                         </div>
                     </div>

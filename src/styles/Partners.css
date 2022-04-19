@@ -8,3 +8,17 @@
     justify-content: center;
     margin: 50px 0;
 }
+
+.partner__img {
+    width: 200px;
+}
+
+@media (max-width: 600px) {
+    .partner__img {
+        width: 134px;
+    }
+
+    .partner__img__wrapper {
+        margin: 0;
+    }
+}

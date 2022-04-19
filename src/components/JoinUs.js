@@ -16,15 +16,15 @@ export const JoinUs = ({close}) => {
                         join us
                     </p>
                     <form onSubmit={handleSubmit(onSubmit)} className="join-us__form">
-                        <input className="join-us__form__input"
+                        <input className="form__input join-us__form__input"
                                placeholder="Your name" {...register("name", {required: true})} />
-                        <input className="join-us__form__input" placeholder="Your email" {...register("email", {
+                        <input className="form__input join-us__form__input" placeholder="Your email" {...register("email", {
                             required: true,
                             pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                         })} />
-                        <input className="join-us__form__input"
+                        <input className="form__input join-us__form__input"
                                placeholder="Subject" {...register("subject", {required: true})} />
-                        <textarea className="textarea"
+                        <textarea className="form__input textarea"
                                placeholder="Your message (optional)" {...register("message")} />
                         {/*<button type="submit" className="join-us__form-btn">Join us</button>*/}
                         <div className="join-us__btn__container">

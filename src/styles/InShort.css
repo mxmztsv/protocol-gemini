@@ -61,3 +61,15 @@
 .in-short__card__text__wrapper {
     margin-left: 15px;
 }
+
+@media (max-width: 900px) {
+    .in-short {
+        background-image: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .in-short__card__text__wrapper {
+        margin-left: 25px;
+    }
+}

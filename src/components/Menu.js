@@ -6,6 +6,8 @@ import linkedin from "../assets/svg/linkedin.svg";
 import twitter from "../assets/svg/twitter.svg";
 import discord from "../assets/svg/discord.svg";
 
+// todo: кнопка join us рефактор углов
+
 export const Menu = ({ close, toggleOpenCloseForm }) => {
 
     const openFormHandler = () => {
