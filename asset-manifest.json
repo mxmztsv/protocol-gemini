@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/protocol-gemini/static/css/main.29972d79.css",
-    "main.js": "/protocol-gemini/static/js/main.d50a7eee.js",
+    "main.css": "/protocol-gemini/static/css/main.e17a7a56.css",
+    "main.js": "/protocol-gemini/static/js/main.b7377ef5.js",
     "static/js/787.ff2947cf.chunk.js": "/protocol-gemini/static/js/787.ff2947cf.chunk.js",
     "static/media/Intro.mp4": "/protocol-gemini/static/media/Intro.e195d374322bb02338a9.mp4",
     "static/media/Zoom-PG-Background.gif": "/protocol-gemini/static/media/Zoom-PG-Background.e144c20b355aece68e53.gif",
     "static/media/nft1.gif": "/protocol-gemini/static/media/nft1.e531a4ffba2a9112a31c.gif",
+    "static/media/nft2.gif": "/protocol-gemini/static/media/nft2.f0047c7f4bbde28e60a9.gif",
     "static/media/roadmap.gif": "/protocol-gemini/static/media/roadmap.0fac2d83ef3da51d0e06.gif",
     "static/media/main-bg.png": "/protocol-gemini/static/media/main-bg.f21303244eea2cff7bc2.png",
     "static/media/main-bg-border.png": "/protocol-gemini/static/media/main-bg-border.340d8e78c8882abca36b.png",
@@ -16,7 +17,6 @@
     "static/media/Inter.ttf": "/protocol-gemini/static/media/Inter.b4c30855aff392d7e8dc.ttf",
     "static/media/purple-bg-mobile.png": "/protocol-gemini/static/media/purple-bg-mobile.e04ca713257ac5d8479f.png",
     "static/media/main-mobile-bg.png": "/protocol-gemini/static/media/main-mobile-bg.0f9105daf0706380bf07.png",
-    "static/media/nft3.gif": "/protocol-gemini/static/media/nft3.3b7752317ca8b461256e.gif",
     "static/media/follow-us-img.png": "/protocol-gemini/static/media/follow-us-img.18da9d1b8cd79175e2ce.png",
     "static/media/screen1.png": "/protocol-gemini/static/media/screen1.d6033c70082aecc1853f.png",
     "static/media/augmented3.jpg": "/protocol-gemini/static/media/augmented3.9976cac265bf5f0230df.jpg",
@@ -37,6 +37,8 @@
     "static/media/cubes2.svg": "/protocol-gemini/static/media/cubes2.e8478348326fa6292ab41e8d809e6beb.svg",
     "static/media/cubes1.svg": "/protocol-gemini/static/media/cubes1.04180adf1d04932f2cacac6f09067a42.svg",
     "static/media/video-dots.svg": "/protocol-gemini/static/media/video-dots.d2f55576d4545981e0b5b3d666f71ef2.svg",
+    "static/media/partner 3.svg": "/protocol-gemini/static/media/partner 3.9481c489de1f8483a196c5521a2c21a2.svg",
+    "static/media/partner thumbnail.svg": "/protocol-gemini/static/media/partner thumbnail.f388c720100cbf85c16d9c80ca01043e.svg",
     "static/media/partner1.svg": "/protocol-gemini/static/media/partner1.8c224b65278e690cabbdc18ce7248591.svg",
     "static/media/barcode.svg": "/protocol-gemini/static/media/barcode.b84f1de1084fb758f8044c9ee716c382.svg",
     "static/media/instagram.svg": "/protocol-gemini/static/media/instagram.87a05be2243c886285492ab6e30f5db6.svg",
@@ -65,7 +67,6 @@
     "static/media/arrows-corners.svg": "/protocol-gemini/static/media/arrows-corners.c4abec3e8ad6463279fc8896e1002a1f.svg",
     "static/media/works-cards-bg.svg": "/protocol-gemini/static/media/works-cards-bg.542ce5a49113861b9b70.svg",
     "static/media/in-short-bg.svg": "/protocol-gemini/static/media/in-short-bg.30971e294de21cd7a94a.svg",
-    "static/media/partner-plug.svg": "/protocol-gemini/static/media/partner-plug.ebde1c91081673a4e76f4c519e1e5537.svg",
     "static/media/play.svg": "/protocol-gemini/static/media/play.809f8afb3a864120fd1e5226eeb92314.svg",
     "static/media/x-mark-cyan.svg": "/protocol-gemini/static/media/x-mark-cyan.7f20d9701ab3b2e966ede25a4c170e94.svg",
     "static/media/arraw-bottom-left-sm.svg": "/protocol-gemini/static/media/arraw-bottom-left-sm.d3ee3a18461351b8847d2e6e6d323434.svg",
@@ -76,12 +77,12 @@
     "static/media/join-us-btn.svg": "/protocol-gemini/static/media/join-us-btn.dc7ffe57c5c64b43c23e.svg",
     "static/media/marker.svg": "/protocol-gemini/static/media/marker.1d0adfd3b1c191fbdfb725280221fa2d.svg",
     "static/media/arrow-bottom-left.svg": "/protocol-gemini/static/media/arrow-bottom-left.74539d37bd72b004144bdaa253427562.svg",
-    "main.29972d79.css.map": "/protocol-gemini/static/css/main.29972d79.css.map",
-    "main.d50a7eee.js.map": "/protocol-gemini/static/js/main.d50a7eee.js.map",
+    "main.e17a7a56.css.map": "/protocol-gemini/static/css/main.e17a7a56.css.map",
+    "main.b7377ef5.js.map": "/protocol-gemini/static/js/main.b7377ef5.js.map",
     "787.ff2947cf.chunk.js.map": "/protocol-gemini/static/js/787.ff2947cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29972d79.css",
-    "static/js/main.d50a7eee.js"
+    "static/css/main.e17a7a56.css",
+    "static/js/main.b7377ef5.js"
   ]
 }
