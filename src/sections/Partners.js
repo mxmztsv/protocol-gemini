@@ -7,7 +7,8 @@ import 'swiper/css';
 
 import partner1 from '../assets/svg/partner1.svg'
 import partner2 from '../assets/svg/partner2.svg'
-import partnerPlug from '../assets/svg/partner-plug.svg'
+import partner3 from '../assets/svg/partner 3.svg'
+import partnerPlug from '../assets/svg/partner thumbnail.svg'
 
 export const Partners = () => {
 
@@ -33,7 +34,7 @@ export const Partners = () => {
                         </Grid>
                         <Grid item md={3} sm={6}>
                             <div className="partner__img__wrapper">
-                                <img src={partnerPlug} alt="partner plug image" className="partner__img"/>
+                                <img src={partner3} alt="partner plug image" className="partner__img"/>
                             </div>
                         </Grid>
                         <Grid item md={3} sm={6}>
@@ -68,7 +69,7 @@ export const Partners = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="partner__img__wrapper">
-                                <img src={partnerPlug} alt="partner plug image" className="partner__img"/>
+                                <img src={partner3} alt="partner plug image" className="partner__img"/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>

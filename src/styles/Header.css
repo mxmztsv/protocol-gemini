@@ -31,18 +31,27 @@ header {
     animation-fill-mode: forwards;
     /*animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);*/
 }
+.header__logo__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-.header__logo {
-    /*display: flex;*/
-    /*justify-self: flex-start;*/
     animation-name: logo-emersion;
     animation-duration: 1s;
-    /*animation-fill-mode: forwards;*/
-    /*animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);*/
+}
+
+.header__logo__text {
+    position: relative;
+    left: -10px;
+    top: -2px;
+    height: 64px;
 }
 
 .header__btn__wrapper {
     margin-left: 50px;
+    width: 242px;
+    height: 64px;
 }
 
 .navbar {
@@ -111,6 +120,14 @@ header {
     }
 }
 
+@media (max-width: 1275px) {
+    .header__btn__wrapper {
+        margin-left: 0px;
+        width: 200px;
+        height: 53px;
+    }
+}
+
 
 @media (max-width: 1000px) {
     .navbar li a {
@@ -135,5 +152,12 @@ header {
     .header__logo {
         /*width: 280px;*/
         height: 50px;
+    }
+
+    .header__logo__text {
+        position: relative;
+        left: -10px;
+        top: -2px;
+        height: 56px;
     }
 }

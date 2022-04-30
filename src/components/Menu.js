@@ -29,17 +29,17 @@ export const Menu = ({ close, toggleOpenCloseForm }) => {
                 <ul className="menu__list">
                     <li className="menu__list__item">
                         <a href="#" className="menu__list__item__text">
-                            TQN//VIP//NFTs
-                        </a>
-                    </li>
-                    <li className="menu__list__item">
-                        <a href="#" className="menu__list__item__text">
                             What’s This?
                         </a>
                     </li>
                     <li className="menu__list__item">
                         <a href="#" className="menu__list__item__text">
                             Blackpaper
+                        </a>
+                    </li>
+                    <li className="menu__list__item">
+                        <a href="#" className="menu__list__item__text">
+                            TQN//VIP//NFTs
                         </a>
                     </li>
                     <li className="menu__list__item">

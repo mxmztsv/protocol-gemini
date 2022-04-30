@@ -1,5 +1,5 @@
 import {Container, Grid} from "@mui/material";
-import {Controller, useForm} from 'react-hook-form';
+import {useForm} from 'react-hook-form';
 
 import img from '../assets/img/follow-us-img.png'
 import instagram from '../assets/svg/instagram.svg'
@@ -12,7 +12,7 @@ export const ProtocolGemini = () => {
 
     //todo: валидация
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const {register, handleSubmit, watch, formState: {errors}} = useForm();
     const onSubmit = data => console.log(data);
 
     return (
@@ -36,20 +36,29 @@ export const ProtocolGemini = () => {
                                         <span className="purple">Follow us:</span>
                                     </p>
                                     <p className="follow-us__info__text">
-                                        Please Be Sure To Submit Your Email To Be The First Being Notified About The Launch .
+                                        Please Be Sure To Submit Your Email To Be The First Being Notified About The
+                                        Launch .
                                     </p>
                                     <div className="follow-us__info__socials">
-                                        <a href="https://www.instagram.com/protocolgemini/" className="follow-us__info__socials__item__link">
-                                            <img src={instagram} alt="instagram link" className="follow-us__info__socials__item__img instagram"/>
+                                        <a href="https://www.instagram.com/protocolgemini/"
+                                           className="follow-us__info__socials__item__link">
+                                            <img src={instagram} alt="instagram link"
+                                                 className="follow-us__info__socials__item__img instagram"/>
                                         </a>
-                                        <a href="https://www.linkedin.com/company/protocol-gemini" className="follow-us__info__socials__item__link">
-                                            <img src={linkedin} alt="linked in link" className="follow-us__info__socials__item__img linkedin"/>
+                                        <a href="https://www.linkedin.com/company/protocol-gemini"
+                                           className="follow-us__info__socials__item__link">
+                                            <img src={linkedin} alt="linked in link"
+                                                 className="follow-us__info__socials__item__img linkedin"/>
                                         </a>
-                                        <a href="https://twitter.com/ProtocolGemini" className="follow-us__info__socials__item__link">
-                                            <img src={twitter} alt="twitter link" className="follow-us__info__socials__item__img twitter"/>
+                                        <a href="https://twitter.com/ProtocolGemini"
+                                           className="follow-us__info__socials__item__link">
+                                            <img src={twitter} alt="twitter link"
+                                                 className="follow-us__info__socials__item__img twitter"/>
                                         </a>
-                                        <a href="https://discord.gg/zASFUun8Tf" className="follow-us__info__socials__item__link">
-                                            <img src={discord} alt="discord link" className="follow-us__info__socials__item__img discord"/>
+                                        <a href="https://discord.gg/zASFUun8Tf"
+                                           className="follow-us__info__socials__item__link">
+                                            <img src={discord} alt="discord link"
+                                                 className="follow-us__info__socials__item__img discord"/>
                                         </a>
                                     </div>
                                 </div>
@@ -67,25 +76,31 @@ export const ProtocolGemini = () => {
                                 <div className="form__list__item">
                                     <img src={marker} className="form__list__item__marker"/>
                                     <p className="form__list__item__text">
-                                        Get access to exclusive early-stage badges, NFT tickets to live events, and more!
+                                        Get on the early access list for Protocol: Gemini BETA (coming soon)
                                     </p>
                                 </div>
                                 <div className="form__list__item">
                                     <img src={marker} className="form__list__item__marker"/>
                                     <p className="form__list__item__text">
-                                        Find out about our Beta Launch of the app.
+                                        Be one of our earliest supporters, get exclusive NFT badges, Tickets to live
+                                        events and more!
                                     </p>
                                 </div>
                                 <div className="form__list__item">
                                     <img src={marker} className="form__list__item__marker"/>
                                     <p className="form__list__item__text">
-                                        Learn how GEMz work, NFT 2.0 items and experiences, limited release discounts, check it all out by signing up below
+                                        Learn how GEMz work, NFT 2.0 items and experiences, limited release discounts,
+                                        signup for our newsletter, Find out about Twitter Spaces and event etc.
+                                        Check it all out by signing up below
                                     </p>
                                 </div>
                             </div>
                             <form onSubmit={handleSubmit(onSubmit)} className="form">
-                                <input className="protocol__form__input form__input" placeholder="Email" {...register("email", { required: true, pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })} />
-                                {/*<button type="submit" className="protocol__form-btn form-btn">Subscribe</button>*/}
+                                <input className="protocol__form__input form__input"
+                                       placeholder="Email" {...register("email", {
+                                    required: true,
+                                    pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                                })} />
                                 <div className="form__btn__wrapper">
                                     <button type="submit" className="btn_invert">Subscribe</button>
                                 </div>

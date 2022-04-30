@@ -50,6 +50,7 @@ export const AugmentedReality = () => {
                     <div className="reality__text__wrapper">
                         <p className="reality__text">
                             Traditional GPS takes place on either the X or the Y axis but we would be adding the Z axis.
+                            Thus, making a truly unique and fulfilling experience.
                         </p>
                         <p className="reality__text">
                             Upon that framework, our users will be able to create entirely new worlds that live

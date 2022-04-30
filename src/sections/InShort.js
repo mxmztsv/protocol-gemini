@@ -1,5 +1,5 @@
 import {Grid, Hidden} from "@mui/material";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 // Import Swiper styles
@@ -44,8 +44,10 @@ export const InShort = () => {
                                         LET'S HAVE SOME FUN
                                     </p>
                                     <p className="in-short__card__text">
-                                        This is where it gets REAL fun-This network of 3D data points will have community
-                                        access for any user to build their own QUESTS, STRUCTURES, BUILDINGS, and eventually
+                                        This is where it gets REAL fun-This network of 3D data points will have
+                                        community
+                                        access for any user to build their own QUESTS, STRUCTURES, BUILDINGS, and
+                                        eventually
                                         NPCs. Kinda like a video game that you can see on top of the real world!
                                     </p>
                                 </div>
@@ -61,9 +63,9 @@ export const InShort = () => {
                                         BUILDING THE FUTURE
                                     </p>
                                     <p className="in-short__card__text">
-                                        You will help build a useful network of "Small Data Points" that are upvoted and
-                                        downvoted by the community. All the while you will be rewarded for your
-                                        contributions with our very own GEMz
+                                        As a WORLD MAP is created we can start implementing a first of its kind 3D
+                                        subset of data points that will act as a bridge to our AR (augmented reality)
+                                        WORLD 2.0
                                     </p>
                                 </div>
                             </div>
@@ -77,7 +79,7 @@ export const InShort = () => {
                 <div className="work__swiper__wrapper">
                     <Swiper
                         spaceBetween={15}
-                        slidesPerView={ isMd ? 2 : 1.2}
+                        slidesPerView={isMd ? 2 : 1.2}
                         // slidesPerView={'auto'}
                         centeredSlides={true}
                         // setWrapperSize={true}
@@ -106,8 +108,10 @@ export const InShort = () => {
                                         LET'S HAVE SOME FUN
                                     </p>
                                     <p className="in-short__card__text">
-                                        This is where it gets REAL fun-This network of 3D data points will have community
-                                        access for any user to build their own QUESTS, STRUCTURES, BUILDINGS, and eventually
+                                        This is where it gets REAL fun-This network of 3D data points will have
+                                        community
+                                        access for any user to build their own QUESTS, STRUCTURES, BUILDINGS, and
+                                        eventually
                                         NPCs. Kinda like a video game that you can see on top of the real world!
                                     </p>
                                 </div>
@@ -121,9 +125,9 @@ export const InShort = () => {
                                         BUILDING THE FUTURE
                                     </p>
                                     <p className="in-short__card__text">
-                                        You will help build a useful network of "Small Data Points" that are upvoted and
-                                        downvoted by the community. All the while you will be rewarded for your
-                                        contributions with our very own GEMz
+                                        As a WORLD MAP is created we can start implementing a first of its kind 3D
+                                        subset of data points that will act as a bridge to our AR (augmented reality)
+                                        WORLD 2.0
                                     </p>
                                 </div>
                             </div>

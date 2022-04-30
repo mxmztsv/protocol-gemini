@@ -44,7 +44,10 @@ function App() {
                         <PurpleBackground height={2000} y={5400}/>
                         <PurpleBackground height={900} y={6950}/>
                         <PurpleBackground height={2200} y={7700}/>
-                        <PurpleBackgroundFooter height={1500} y={8952}/>
+                        {/*<Hidden xlUp>*/}
+                            <PurpleBackgroundFooter height={1500} y={9100}/>
+                        // todo: уползает фон куда-то...
+                        {/*</Hidden>*/}
                     </Hidden>
 
                     <Hidden lgUp>

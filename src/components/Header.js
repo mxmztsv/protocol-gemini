@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Container, Hidden} from "@mui/material";
 
 import logo from '../assets/svg/logo.svg'
+import logoText from '../assets/svg/Protocol-Gemini_Flat 2.svg'
 import {JoinUs} from "./JoinUs";
 import logoSmall from '../assets/svg/Protocol-Gemini_Flat 3.svg'
 import {Menu} from "./Menu";
@@ -25,21 +26,25 @@ export const Header = () => {
         <header>
             {/*<Container disableGutters={true}>*/}
                 <div className="header__wrapper">
-                    <Hidden lgDown>
-                        <img src={logo} alt="logo" className="header__logo"/>
-                    </Hidden>
-                    <Hidden lgUp mdDown>
+                    {/*<Hidden lgDown>*/}
+                    {/*    <img src={logo} alt="logo" className="header__logo"/>*/}
+                    {/*</Hidden>*/}
+                    <div className="header__logo__wrapper">
                         <img src={logoSmall} alt="logo" className="header__logo"/>
-                    </Hidden>
-                    <Hidden mdUp>
-                        <img src={logo} alt="logo" className="header__logo"/>
-                    </Hidden>
+                        <Hidden lgDown>
+                            <img src={logoText} alt="logo" className="header__logo__text"/>
+                        </Hidden>
+                        <Hidden mdUp>
+                            <img src={logoText} alt="logo" className="header__logo__text"/>
+                        </Hidden>
+                    </div>
+
                     <Hidden mdDown>
                         <div className="right-col">
                             <ul className="navbar">
-                                <li><a href="#">TQN//VIP//NFTs</a></li>
                                 <li><a href="#">What’s This?</a></li>
                                 <li><a href="#">Blackpaper</a></li>
+                                <li><a href="#">TQN//VIP//NFTs</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                             <div className="header__btn__wrapper">

@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import {Grid, Hidden} from "@mui/material";
 
 import nft1 from '../assets/gif/nft/nft1.gif'
-import nft2 from '../assets/gif/nft/nft3.gif'
+import nft2 from '../assets/gif/nft/nft2.gif'
+import nft3 from '../assets/gif/nft/nft2.gif'
 import cubes2 from '../assets/svg/cubes2.svg'
 
 export const BuyNFT = () => {
@@ -26,21 +27,28 @@ export const BuyNFT = () => {
     }
 
     const mintHandler = () => {
-        window.location.href = 'https://opensea.io/ProtocolGeminiVault'
+        // window.location.href = 'https://opensea.io/ProtocolGeminiVault'
+        window.location.href = nft[selectedNftIndex].link
     }
 
     const nft = [
         {
             img: nft1,
-            name: 'skeleton'
-        },
-        {
-            img: nft1,
-            name: 'another one'
+            name: 'The Quadratic Necromancer',
+            subtitle: 'Buy Event Ticket NFT',
+            link: 'https://opensea.io/assets/0xa6df7b5714d56296aa107de3a84d8f3006451709/1'
         },
         {
             img: nft2,
-            name: 'cat'
+            name: 'VIP Ticket',
+            subtitle: 'Buy Event Ticket NFT',
+            link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114716135699915582175855661118568628387580385735542477165522139520416023052788'
+        },
+        {
+            img: nft3,
+            name: 'Metagates',
+            subtitle: 'Coming soon...',
+            link: 'https://opensea.io/ProtocolGeminiVault'
         },
     ]
 
@@ -88,10 +96,10 @@ export const BuyNFT = () => {
                         <div className="buy__nft-name__col">
                             <div className="buy__nft-name__wrapper">
                                 <p className="buy__nft-name">
-                                    {'BUY ' + nft[selectedNftIndex].name + ' KEY NFT'}
+                                    {'BUY ' + nft[selectedNftIndex].name + ' NFT'}
                                 </p>
                                 <p className="buy__subtitle">
-                                    Buy Event Ticket NFT
+                                    {nft[selectedNftIndex].subtitle}
                                 </p>
                             </div>
 
@@ -112,10 +120,10 @@ export const BuyNFT = () => {
             <Hidden smUp>
                 <div className="buy__nft-name__wrapper">
                     <p className="buy__nft-name">
-                        {'BUY ' + nft[selectedNftIndex].name + ' KEY NFT'}
+                        {'BUY ' + nft[selectedNftIndex].name + ' NFT'}
                     </p>
                     <p className="buy__subtitle">
-                        Buy Event Ticket NFT
+                        {nft[selectedNftIndex].subtitle}
                     </p>
                 </div>
 
