@@ -28,6 +28,90 @@
     margin-left: 450px;
 }
 
+.roadmap__tabs__navigator__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.roadmap__tabs__navigator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    /*z-index: 9;*/
+}
+
+.roadmap__tabs__navigator__switchers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.roadmap__tabs__navigator__switchers__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roadmap__tabs__navigator__switchers__item__text {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Gray 6 */
+
+    color: #F2F2F2;
+}
+
+.roadmap__tabs__navigator__switchers__item__img {
+    z-index: 99;
+}
+
+.roadmap__tabs__navigator__progress__wrapper {
+    padding: 0 82px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: -25px;
+    /*z-index: 8;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap__tabs__navigator__progress {
+    width: 100%;
+    margin: 0;
+    height: 1.5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.roadmap__tabs__navigator__progress::-moz-progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.roadmap__tabs__navigator__progress::-webkit-progress-value {
+    background: #1eedd9;
+}
+
+.roadmap__tabs__navigator__progress::-webkit-progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 @media (max-width: 800px) {
 
     .roadmap__title {
