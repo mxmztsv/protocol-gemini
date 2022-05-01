@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .roadmap__tabs__navigator {
@@ -54,6 +55,20 @@
 }
 
 .roadmap__tabs__navigator__switchers__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roadmap__tabs__navigator__switchers__item_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roadmap__tabs__navigator__switchers__item_right {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +127,113 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 800px) {
+.roadmap__tab {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.roadmap__tab__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 21px;
+    width: 25%;
+    margin: 7px;
+
+    background: linear-gradient(180deg, #7E5EFF 0%, rgba(126, 94, 255, 0.19) 100%);
+    border: 2px solid #7E5EFF;
+    box-sizing: border-box;
+}
+
+.roadmap__tab__card__title {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #1EEDD9;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0 10px 0;
+}
+
+.roadmap__tab__card__date {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    border: white 1px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    /* WH */
+
+    color: #FFFFFF;
+}
+
+.roadmap__tab__card__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+    margin: 5px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.roadmap__tab__card__img {
+    width: 100%;
+    max-width: 241px;
+    margin-top: 20px;
+}
+
+.roadmap__tab__card__text_phase03 {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 11px 0;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+@media (max-width: 1000px) {
+    .roadmap__tab__card__text_phase03 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
 
     .roadmap__title {
         display: flex;
@@ -126,5 +247,30 @@
         margin: 0;
         position: relative;
         top: -25px;
+    }
+
+    .roadmap__tab__card {
+        width: 100%;
+    }
+
+    .roadmap__tabs__navigator__switchers__item__text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .transparent {
+        color: transparent;
+    }
+
+    .roadmap__tabs__navigator__progress__wrapper {
+        padding: 0 30px;
+    }
+
+    .roadmap__tabs__navigator__switchers__item_left {
+        align-items: flex-start;
+    }
+
+    .roadmap__tabs__navigator__switchers__item_right {
+        align-items: flex-end;
     }
 }

@@ -1,10 +1,15 @@
 import {useState} from "react";
-import gif from '../assets/gif/roadmap.gif'
-import lines from '../assets/svg/video-lines.svg'
 import arrow from '../assets/svg/arraw-bottom-left-sm.svg'
 import switcher from '../assets/svg/switcher.svg'
 import switcherActive from '../assets/svg/switcher_active.svg'
+import phase01 from '../assets/img/phase01.png'
+import phase02 from '../assets/img/phase02.png'
 import {Hidden} from "@mui/material";
+import {Swiper, SwiperSlide} from 'swiper/react';
+import useMediaQuery from "@mui/material/useMediaQuery";
+
+// Import Swiper styles
+import 'swiper/css';
 
 export const Roadmap = () => {
 
@@ -16,14 +21,118 @@ export const Roadmap = () => {
             img: switcherActive
         },
         {
-            textClassName: "roadmap__tabs__navigator__switchers__item__text",
+            textClassName: "roadmap__tabs__navigator__switchers__item__text transparent",
             img: switcher
         },
         {
-            textClassName: "roadmap__tabs__navigator__switchers__item__text",
+            textClassName: "roadmap__tabs__navigator__switchers__item__text transparent",
             img: switcher
         }
     ]);
+
+    const phasesContent = [
+        [
+            {
+                title: "Core Team Established",
+                date: "JUNE-OCT.2020",
+                text: [
+                    "Alin Matei: UI/UX",
+                    "Sergii Golotovskiy: Worldbuilder",
+                    "Jai Dhawan: CTO"
+                ]
+            },
+            {
+                title: "GEMz contract",
+                date: "JULY 27.2020",
+                text: [
+                    "ERC-20 minted",
+                    "Nitial supply: 100b"
+                ]
+            },
+            {
+                title: "Team Expansion",
+                date: "AUG.2020 - FEB.2022",
+                text: [
+                    "Engwind: 3d visionary",
+                    "Expanded advisory board: multi disc",
+                    "Expanded art dept: multiple part-time",
+                    "Stealth dev team: backend, app, ar"
+                ]
+            },
+            {
+                title: "Initial Prototype",
+                date: "DEC.10.2021",
+                text: [
+                    "MVP Mobile app live on iOS store via Testflight. Expanded features to be added for Beta"
+                ]
+            },
+        ],
+        [
+            {
+                title: "FIRST LIVE EVENTS",
+                date: "ETA Q1 23'",
+                text: [
+                    "After Seed Round",
+                    "Limited Pre-selected",
+                    "Will Be Adding Android Cap"
+                ]
+            },
+            {
+                title: "INITIAL TOKEN OFFERING",
+                date: "ETA Q2 23'",
+                text: [
+                    "Public Offering"
+                ]
+            },
+            {
+                title: "METAGATE RELEASE",
+                date: "ETA Q3 22'",
+                text: [
+                    "Metaverse Hub",
+                    "tbd Gear, Vaults, Multiplayer, +more!"
+                ]
+            },
+            {
+                title: "Official Beta",
+                date: "ETA Q4 22'",
+                text: [
+                    "After Seed Round",
+                    "Limited Pre-selected",
+                    "Will Be Adding Android Cap"
+                ]
+            },
+        ],
+        [
+            {
+                text: [
+                    "FUll ACCESS APP",
+                    "BUILDER TOOLS",
+                    "IMMERSIVE REALITIES",
+                    "HARDWARE INTEGRATIONS"
+                ]
+            },
+            {
+                text: [
+                    "P:G WALLET",
+                    "METAVERSE+",
+                    "COMMUNITY GRANTS"
+                ]
+            },
+            {
+                text: [
+                    "TBA",
+                    "TBA"
+                ]
+            },
+            {
+                text: [
+                    "PARTNERSHIPS",
+                    "+EVENTS",
+                    "PROMOTIONS ETC..."
+                ]
+            },
+        ],
+    ]
 
     const showFirstTab = () => {
         setActiveTab(1)
@@ -34,11 +143,11 @@ export const Roadmap = () => {
                 img: switcherActive
             },
             {
-                textClassName: "roadmap__tabs__navigator__switchers__item__text",
+                textClassName: "roadmap__tabs__navigator__switchers__item__text transparent",
                 img: switcher
             },
             {
-                textClassName: "roadmap__tabs__navigator__switchers__item__text",
+                textClassName: "roadmap__tabs__navigator__switchers__item__text transparent",
                 img: switcher
             }
         ])
@@ -49,7 +158,7 @@ export const Roadmap = () => {
         setProgressValue(50)
         setTabsNavigator([
             {
-                textClassName: "roadmap__tabs__navigator__switchers__item__text",
+                textClassName: "roadmap__tabs__navigator__switchers__item__text transparent",
                 img: switcherActive
             },
             {
@@ -57,7 +166,7 @@ export const Roadmap = () => {
                 img: switcherActive
             },
             {
-                textClassName: "roadmap__tabs__navigator__switchers__item__text",
+                textClassName: "roadmap__tabs__navigator__switchers__item__text transparent",
                 img: switcher
             }
         ])
@@ -68,11 +177,11 @@ export const Roadmap = () => {
         setProgressValue(100)
         setTabsNavigator([
             {
-                textClassName: "roadmap__tabs__navigator__switchers__item__text",
+                textClassName: "roadmap__tabs__navigator__switchers__item__text transparent",
                 img: switcherActive
             },
             {
-                textClassName: "roadmap__tabs__navigator__switchers__item__text",
+                textClassName: "roadmap__tabs__navigator__switchers__item__text transparent",
                 img: switcherActive
             },
             {
@@ -82,6 +191,7 @@ export const Roadmap = () => {
         ])
     }
 
+    const isMd = useMediaQuery('(min-width:600px)')
 
     return (
         <section className="roadmap">
@@ -89,34 +199,29 @@ export const Roadmap = () => {
                 Roadmap
                 <img src={arrow} className="roadmap__arrow"/>
             </h2>
-            {/*<div className="roadmap__gif__container">*/}
-            {/*    <div className="roadmap__gif__border">*/}
-            {/*        <img src={gif} className="roadmap__gif"/>*/}
-            {/*    </div>*/}
-            {/*    <Hidden smDown>*/}
-            {/*        <img src={lines} className="roadmap__gif__lines"/>*/}
-            {/*    </Hidden>*/}
-            {/*</div>*/}
             <div className="roadmap__tabs__navigator__wrapper">
                 <div className="roadmap__tabs__navigator">
                     <div className="roadmap__tabs__navigator__switchers">
-                        <div className="roadmap__tabs__navigator__switchers__item" onClick={showFirstTab}>
+                        <div className="roadmap__tabs__navigator__switchers__item_left" onClick={showFirstTab}>
                             <p className={tabsNavigator[0].textClassName}>
                                 PHASE 01
                             </p>
-                            <img src={tabsNavigator[0].img} alt="tab switcher" className="roadmap__tabs__navigator__switchers__item__img"/>
+                            <img src={tabsNavigator[0].img} alt="tab switcher"
+                                 className="roadmap__tabs__navigator__switchers__item__img"/>
                         </div>
                         <div className="roadmap__tabs__navigator__switchers__item" onClick={showSecondTab}>
                             <p className={tabsNavigator[1].textClassName}>
                                 PHASE 02
                             </p>
-                            <img src={tabsNavigator[1].img} alt="tab switcher" className="roadmap__tabs__navigator__switchers__item__img"/>
+                            <img src={tabsNavigator[1].img} alt="tab switcher"
+                                 className="roadmap__tabs__navigator__switchers__item__img"/>
                         </div>
-                        <div className="roadmap__tabs__navigator__switchers__item" onClick={showThirdTab}>
+                        <div className="roadmap__tabs__navigator__switchers__item_right" onClick={showThirdTab}>
                             <p className={tabsNavigator[2].textClassName}>
                                 PHASE 03
                             </p>
-                            <img src={tabsNavigator[2].img} alt="tab switcher" className="roadmap__tabs__navigator__switchers__item__img"/>
+                            <img src={tabsNavigator[2].img} alt="tab switcher"
+                                 className="roadmap__tabs__navigator__switchers__item__img"/>
                         </div>
                     </div>
                     <div className="roadmap__tabs__navigator__progress__wrapper">
@@ -124,6 +229,200 @@ export const Roadmap = () => {
                     </div>
                 </div>
             </div>
+
+            {(activeTab === 1) &&
+                <>
+                    <Hidden mdDown>
+                        <div className="roadmap__tab">
+                            {
+                                phasesContent[0].map((point, index) => {
+                                    return (
+                                        <div className="roadmap__tab__card">
+                                            <p className="roadmap__tab__card__title">
+                                                {point.title}
+                                            </p>
+                                            <p className="roadmap__tab__card__date">
+                                                {point.date}
+                                            </p>
+                                            {
+                                                point.text.map((p, ind) => {
+                                                    return (
+                                                        <p className="roadmap__tab__card__text">
+                                                            {p}
+                                                        </p>
+                                                    )
+                                                })
+                                            }
+                                            <img src={phase01} className="roadmap__tab__card__img"/>
+                                        </div>
+                                    )
+                                })
+                            }
+
+                        </div>
+                    </Hidden>
+                    <Hidden mdUp>
+                        <Swiper
+                            spaceBetween={10}
+                            slidesPerView={isMd ? 2.1 : 1.2}
+                            centeredSlides={false}
+                            grabCursor={true}
+                        >
+                            {
+                                phasesContent[0].map((point, index) => {
+                                    return (
+                                        <SwiperSlide>
+                                            <div className="roadmap__tab__card">
+                                                <p className="roadmap__tab__card__title">
+                                                    {point.title}
+                                                </p>
+                                                <p className="roadmap__tab__card__date">
+                                                    {point.date}
+                                                </p>
+                                                {
+                                                    point.text.map((p, ind) => {
+                                                        return (
+                                                            <p className="roadmap__tab__card__text">
+                                                                {p}
+                                                            </p>
+                                                        )
+                                                    })
+                                                }
+                                                <img src={phase01} className="roadmap__tab__card__img"/>
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
+                        </Swiper>
+                    </Hidden>
+                </>
+
+            }
+
+            {(activeTab === 2) &&
+                <>
+                    <Hidden mdDown>
+                        <div className="roadmap__tab">
+                            {
+                                phasesContent[1].map((point, index) => {
+                                    return (
+                                        <div className="roadmap__tab__card">
+                                            <p className="roadmap__tab__card__title">
+                                                {point.title}
+                                            </p>
+                                            <p className="roadmap__tab__card__date">
+                                                {point.date}
+                                            </p>
+                                            {
+                                                point.text.map((p, ind) => {
+                                                    return (
+                                                        <p className="roadmap__tab__card__text">
+                                                            {p}
+                                                        </p>
+                                                    )
+                                                })
+                                            }
+                                            <img src={phase02} className="roadmap__tab__card__img"/>
+                                        </div>
+                                    )
+                                })
+                            }
+
+                        </div>
+                    </Hidden>
+                    <Hidden mdUp>
+                        <Swiper
+                            spaceBetween={10}
+                            slidesPerView={isMd ? 2.1 : 1.2}
+                            centeredSlides={false}
+                            grabCursor={true}
+                        >
+                            {
+                                phasesContent[1].map((point, index) => {
+                                    return (
+                                        <SwiperSlide>
+                                            <div className="roadmap__tab__card">
+                                                <p className="roadmap__tab__card__title">
+                                                    {point.title}
+                                                </p>
+                                                <p className="roadmap__tab__card__date">
+                                                    {point.date}
+                                                </p>
+                                                {
+                                                    point.text.map((p, ind) => {
+                                                        return (
+                                                            <p className="roadmap__tab__card__text">
+                                                                {p}
+                                                            </p>
+                                                        )
+                                                    })
+                                                }
+                                                <img src={phase02} className="roadmap__tab__card__img"/>
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
+                        </Swiper>
+                    </Hidden>
+                </>
+            }
+
+            {(activeTab === 3) &&
+                <>
+                    <Hidden mdDown>
+                        <div className="roadmap__tab">
+                            {
+                                phasesContent[2].map((point, index) => {
+                                    return (
+                                        <div className="roadmap__tab__card">
+                                            {
+                                                point.text.map((p, ind) => {
+                                                    return (
+                                                        <p className="roadmap__tab__card__text_phase03">
+                                                            {p}
+                                                        </p>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                    )
+                                })
+                            }
+
+                        </div>
+                    </Hidden>
+                    <Hidden mdUp>
+                        <Swiper
+                            spaceBetween={10}
+                            slidesPerView={isMd ? 2.1 : 1.2}
+                            centeredSlides={false}
+                            grabCursor={true}
+                        >
+                            {
+                                phasesContent[2].map((point, index) => {
+                                    return (
+                                        <SwiperSlide>
+                                            <div className="roadmap__tab__card">
+                                                {
+                                                    point.text.map((p, ind) => {
+                                                        return (
+                                                            <p className="roadmap__tab__card__text_phase03">
+                                                                {p}
+                                                            </p>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
+                        </Swiper>
+                    </Hidden>
+                </>
+            }
 
         </section>
     )
