@@ -38,25 +38,25 @@ export const Roadmap = () => {
                 text: [
                     "Alin Matei: UI/UX",
                     "Sergii Golotovskiy: Worldbuilder",
-                    "Jai Dhawan: CTO"
+                    "Jai Dhawan: CTO and Co-Founder"
                 ]
             },
             {
                 title: "GEMz contract",
                 date: "JULY 27.2020",
                 text: [
-                    "ERC-20 minted",
-                    "Nitial supply: 100b"
+                    "ERC-20 Utility Token Minted",
+                    "INITIAL SUPPLY: 100B"
                 ]
             },
             {
                 title: "Team Expansion",
                 date: "AUG.2020 - FEB.2022",
                 text: [
-                    "Engwind: 3d visionary",
+                    "Engwind: 3D Visionary",
                     "Expanded advisory board: multi disc",
                     "Expanded art dept: multiple part-time",
-                    "Stealth dev team: backend, app, ar"
+                    "Stealth dev team: Backend, App, AR"
                 ]
             },
             {
@@ -72,16 +72,16 @@ export const Roadmap = () => {
                 title: "FIRST LIVE EVENTS",
                 date: "ETA Q1 23'",
                 text: [
-                    "After Seed Round",
-                    "Limited Pre-selected",
-                    "Will Be Adding Android Cap"
+                    "Post Seed-Round",
+                    "Limited closed BETA for pre-selected VIPs",
+                    "Android Version Begins Coding"
                 ]
             },
             {
                 title: "INITIAL TOKEN OFFERING",
                 date: "ETA Q2 23'",
                 text: [
-                    "Public Offering"
+                    "Public Token offering/or availability on DEX"
                 ]
             },
             {
