@@ -3,7 +3,7 @@ import {Grid, Hidden} from "@mui/material";
 
 import nft1 from '../assets/gif/nft/nft1.gif'
 import nft2 from '../assets/gif/nft/nft2.gif'
-import nft3 from '../assets/gif/nft/nft2.gif'
+import plug from '../assets/gif/nft/plug.gif'
 import cubes2 from '../assets/svg/cubes2.svg'
 
 export const BuyNFT = () => {
@@ -34,8 +34,8 @@ export const BuyNFT = () => {
     const nft = [
         {
             img: nft1,
-            name: 'The Quadratic Necromancer',
-            subtitle: 'Buy Event Ticket NFT',
+            name: 'Buy Skeleton Key',
+            subtitle: 'TQN Key NFT',
             link: 'https://opensea.io/assets/0xa6df7b5714d56296aa107de3a84d8f3006451709/1'
         },
         {
@@ -45,7 +45,7 @@ export const BuyNFT = () => {
             link: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114716135699915582175855661118568628387580385735542477165522139520416023052788'
         },
         {
-            img: nft3,
+            img: plug,
             name: 'Metagates',
             subtitle: 'Coming soon...',
             link: 'https://opensea.io/ProtocolGeminiVault'
@@ -96,7 +96,7 @@ export const BuyNFT = () => {
                         <div className="buy__nft-name__col">
                             <div className="buy__nft-name__wrapper">
                                 <p className="buy__nft-name">
-                                    {'BUY ' + nft[selectedNftIndex].name + ' NFT'}
+                                    {nft[selectedNftIndex].name}
                                 </p>
                                 <p className="buy__subtitle">
                                     {nft[selectedNftIndex].subtitle}
@@ -120,7 +120,7 @@ export const BuyNFT = () => {
             <Hidden smUp>
                 <div className="buy__nft-name__wrapper">
                     <p className="buy__nft-name">
-                        {'BUY ' + nft[selectedNftIndex].name + ' NFT'}
+                        {nft[selectedNftIndex].name}
                     </p>
                     <p className="buy__subtitle">
                         {nft[selectedNftIndex].subtitle}

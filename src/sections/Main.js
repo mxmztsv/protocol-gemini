@@ -12,6 +12,7 @@ import barcode from '../assets/svg/barcode.svg'
 import sight from '../assets/svg/sight.svg'
 import menu from '../assets/svg/menu.svg'
 import {Menu} from "../components/Menu";
+import {MainTitle} from "../components/MainTitle";
 
 //todo: обрезать видео для гифки
 
@@ -27,6 +28,11 @@ export const Main = () => {
         setIsMenuOpened(!isMenuOpened)
     }
 
+    // const mainTitle = useTypewriter({
+    //     words: ['Enhance', 'Experience', 'Elevate', 'Your Future', 'Step into the Future...'],
+    //     loop: true,
+    // })
+
     return (
         <section className="main">
             <div className="blind_top"/>
@@ -37,11 +43,13 @@ export const Main = () => {
                 <img src={xmark} className="x-mark"/>
                 <img src={xmark} className="x-mark"/>
             </div>
-            <Hidden smDown>
-                <img src={sight} className="sight"/>
-            </Hidden>
+            {/*<Hidden smDown>*/}
+            {/*    <img src={sight} className="sight"/>*/}
+            {/*</Hidden>*/}
             <img src={barcode} className="barcode"/>
+            {/*<h1 className="main__title" data-text="STEP INTO THE FUTURE...">Step into the Future...</h1>*/}
             <h1 className="main__title" data-text="STEP INTO THE FUTURE...">Step into the Future...</h1>
+            {/*<MainTitle/>*/}
             <div className="main__audio-player__wrapper">
                 <div className="main__audio-player__container">
                     <AudioPlayer/>

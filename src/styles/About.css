@@ -52,13 +52,14 @@
 .about__text_accent {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 16px;
     line-height: 24px;
     max-width: 276px;
+    text-align: center;
     /* or 150% */
 
-    letter-spacing: -0.03em;
+    letter-spacing: 1px;
 
     /* Gray 6 */
 
@@ -171,6 +172,10 @@
         /*position: static;*/
         /*margin: 0;*/
         /*bottom: -1072px;*/
+    }
+
+    .about__text_accent {
+        max-width: 100%;
     }
 }
 

@@ -4,6 +4,7 @@ import bg from '../assets/img/purple-bg-footer.png'
 export const PurpleBackgroundFooter = ({ y, height }) => {
     return (
         <div className="purple-bg" style={{height: `${height}px`, top: `${y}px`}}>
+        {/*<div className="purple-bg" style={{height: `${height}px`, bottom: `${y}px`}}>*/}
             <img src={bg} className="purple-bg__img"/>
         </div>
     )

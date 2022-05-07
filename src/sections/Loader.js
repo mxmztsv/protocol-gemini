@@ -18,7 +18,7 @@ export const Loader = ({setLoading}) => {
                 const diff = Math.random() * 80;
                 return Math.min(oldProgress + diff, 100);
             });
-        }, 100);
+        }, 300);
 
         return () => {
             clearInterval(timer);
