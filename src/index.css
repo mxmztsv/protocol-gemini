@@ -18,6 +18,7 @@
 @import url('../src/styles/PurpleBackground.css');
 @import url('../src/styles/JoinUs.css');
 @import url('../src/styles/Menu.css');
+@import url('../src/styles/TypeWriter.css');
 
 * {
   outline: none;

@@ -2,17 +2,12 @@ import React, {useState} from "react";
 import {Header} from "../components/Header";
 import {AudioPlayer} from "../components/AudioPlayer";
 import useMediaQuery from '@mui/material/useMediaQuery';
-import {Hidden} from "@mui/material";
-
-import border from '../assets/img/main-bg-border.png'
 import bg from '../assets/img/main-bg-borderless.png'
 import bgSm from '../assets/img/main-mobile-bg.png'
 import xmark from '../assets/svg/x-mark.svg'
 import barcode from '../assets/svg/barcode.svg'
-import sight from '../assets/svg/sight.svg'
-import menu from '../assets/svg/menu.svg'
-import {Menu} from "../components/Menu";
-import {MainTitle} from "../components/MainTitle";
+import {TypeWriter} from "../components/TypeWriter";
+import {Hidden} from "@mui/material";
 
 //todo: обрезать видео для гифки
 
@@ -28,10 +23,6 @@ export const Main = () => {
         setIsMenuOpened(!isMenuOpened)
     }
 
-    // const mainTitle = useTypewriter({
-    //     words: ['Enhance', 'Experience', 'Elevate', 'Your Future', 'Step into the Future...'],
-    //     loop: true,
-    // })
 
     return (
         <section className="main">
@@ -47,9 +38,13 @@ export const Main = () => {
             {/*    <img src={sight} className="sight"/>*/}
             {/*</Hidden>*/}
             <img src={barcode} className="barcode"/>
-            {/*<h1 className="main__title" data-text="STEP INTO THE FUTURE...">Step into the Future...</h1>*/}
-            <h1 className="main__title" data-text="STEP INTO THE FUTURE...">Step into the Future...</h1>
-            {/*<MainTitle/>*/}
+            <Hidden mdUp>
+                <h1 className="main__title" data-text="STEP INTO THE FUTURE...">Step into the Future...</h1>
+            </Hidden>
+            {/*<TypeWriter strings={["Enhance", "Experience", "Elevate", "Your Future", "Step into the Future..."]}/>*/}
+            <Hidden mdDown>
+                <TypeWriter strings={["Enhance", "Experience", "Elevate", "Your Future..."]}/>
+            </Hidden>
             <div className="main__audio-player__wrapper">
                 <div className="main__audio-player__container">
                     <AudioPlayer/>

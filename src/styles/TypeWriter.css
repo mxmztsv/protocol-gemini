@@ -1,0 +1,54 @@
+.typewriter {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+
+.typewriter__string {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.typewriter__string__text {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    /*line-height: 100%;*/
+    /*margin: 40px;*/
+    margin: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    max-width: 800px;
+    /* or 64px */
+
+    text-transform: uppercase;
+
+    /* Gray 6 */
+
+    color: #F2F2F2;
+}
+
+.typewriter__string__cursor {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    margin: 0 0 0 15px;
+    /*margin-left: 15px;*/
+    /*line-height: 100%;*/
+
+    /* Gray 6 */
+
+    color: #F2F2F2;
+
+    animation:
+    animated-cursor 1000ms infinite;
+}
+
+@keyframes animated-cursor{
+    from{color: #1eedd9;}
+    to{color: transparent;}
+}
