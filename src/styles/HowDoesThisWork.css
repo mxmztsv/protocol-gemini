@@ -28,6 +28,12 @@
     justify-content: center;
 }
 
+.work__card__img {
+    width: 200px;
+    position: relative;
+    top: -15px;
+}
+
 .work__card__number {
     font-family: 'Monument Extended', sans-serif;
     font-style: normal;

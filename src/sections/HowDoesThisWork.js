@@ -31,7 +31,7 @@ export const HowDoesThisWork = () => {
                             <div className="work__card__container" id="work__card__container_1">
                                 <div className="work__card__wrapper">
                                     <div className="work__card__bg">
-                                        <img src={step1} alt="step 1"/>
+                                        <img src={step1} alt="step 1" className="work__card__img"/>
                                     </div>
                                     <p className="work__card__number">01</p>
                                     <p className="work__card__title">
@@ -50,7 +50,7 @@ export const HowDoesThisWork = () => {
                             <div className="work__card__container" id="work__card__container_2">
                                 <div className="work__card__wrapper">
                                     <div className="work__card__bg">
-                                        <img src={step2} alt="step 2"/>
+                                        <img src={step2} alt="step 2" className="work__card__img"/>
                                     </div>
                                     <p className="work__card__number">02</p>
                                     <p className="work__card__title">
@@ -69,7 +69,7 @@ export const HowDoesThisWork = () => {
                             <div className="work__card__container" id="work__card__container_3">
                                 <div className="work__card__wrapper">
                                     <div className="work__card__bg">
-                                        <img src={step3} alt="step 3"/>
+                                        <img src={step3} alt="step 3" className="work__card__img"/>
                                     </div>
                                     <p className="work__card__number">03</p>
                                     <p className="work__card__title">
@@ -98,7 +98,7 @@ export const HowDoesThisWork = () => {
                         <SwiperSlide>
                             <div className="work__card__wrapper">
                                 <div className="work__card__bg">
-                                    <img src={step1} alt="step 1"/>
+                                    <img src={step1} alt="step 1" className="work__card__img"/>
                                 </div>
                                 <p className="work__card__number">01</p>
                                 <p className="work__card__title">
@@ -115,7 +115,7 @@ export const HowDoesThisWork = () => {
                         <SwiperSlide>
                             <div className="work__card__wrapper">
                                 <div className="work__card__bg">
-                                    <img src={step2} alt="step 2"/>
+                                    <img src={step2} alt="step 2" className="work__card__img"/>
                                 </div>
                                 <p className="work__card__number">02</p>
                                 <p className="work__card__title">
@@ -132,7 +132,7 @@ export const HowDoesThisWork = () => {
                         <SwiperSlide>
                             <div className="work__card__wrapper">
                                 <div className="work__card__bg">
-                                    <img src={step3} alt="step 3"/>
+                                    <img src={step3} alt="step 3" className="work__card__img"/>
                                 </div>
                                 <p className="work__card__number">03</p>
                                 <p className="work__card__title">
