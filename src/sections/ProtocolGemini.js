@@ -35,10 +35,10 @@ export const ProtocolGemini = () => {
                                         Would you like to know more?
                                         <span className="purple">Follow us:</span>
                                     </p>
-                                    <p className="follow-us__info__text">
-                                        Please Be Sure To Submit Your Email To Be The First Being Notified About The
-                                        Launch .
-                                    </p>
+                                    {/*<p className="follow-us__info__text">*/}
+                                    {/*    Please Be Sure To Submit Your Email To Be The First Being Notified About The*/}
+                                    {/*    Launch .*/}
+                                    {/*</p>*/}
                                     <div className="follow-us__info__socials">
                                         <a href="https://www.instagram.com/protocolgemini/"
                                            className="follow-us__info__socials__item__link">
