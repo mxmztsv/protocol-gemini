@@ -437,7 +437,7 @@
         position: absolute;
         width: 205px;
         bottom: 20px;
-        left: 0;
+        left: 20px;
         clip-path: none;
 
     }
@@ -475,5 +475,8 @@
         margin: 30px;
     }
 
+    .main__audio-player__wrapper {
+        left: 0px;
+    }
 
 }

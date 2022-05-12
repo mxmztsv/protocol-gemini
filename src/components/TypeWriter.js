@@ -30,7 +30,7 @@ export const TypeWriter = ({ strings = [] }) => {
     useEffect(async () => {
         await sleep(1000)
         await typeStrings()
-    }, [strings]);
+    }, []);
 
 
     return (
@@ -43,6 +43,10 @@ export const TypeWriter = ({ strings = [] }) => {
                     l
                 </p>
             </div>
+
+            <p className="typewriter__string__text">
+                Your Future...
+            </p>
         </div>
     )
 }

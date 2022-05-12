@@ -1,6 +1,6 @@
 .typewriter {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 40px;
 }
 
@@ -9,6 +9,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    top: 20px;
 }
 
 .typewriter__string__text {
@@ -22,6 +24,7 @@
     /*position: absolute;*/
     /*bottom: 0;*/
     max-width: 800px;
+    letter-spacing: 1px;
     /* or 64px */
 
     text-transform: uppercase;
@@ -51,4 +54,42 @@
 @keyframes animated-cursor{
     from{color: #1eedd9;}
     to{color: transparent;}
+}
+
+@media (max-width: 1000px) {
+    .typewriter__string__text {
+        font-size: 42px;
+    }
+
+    .typewriter__string__cursor {
+        font-size: 60px;
+    }
+
+    .typewriter {
+        bottom: 80px;
+        left: 40px;
+    }
+
+    .typewriter__string {
+        top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .typewriter__string__text {
+        font-size: 24px;
+    }
+
+    .typewriter__string__cursor {
+        font-size: 30px;
+    }
+
+    .typewriter {
+        bottom: 90px;
+        left: 20px;
+    }
+
+    .typewriter__string {
+        top: 0px;
+    }
 }

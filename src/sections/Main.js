@@ -7,7 +7,6 @@ import bgSm from '../assets/img/main-mobile-bg.png'
 import xmark from '../assets/svg/x-mark.svg'
 import barcode from '../assets/svg/barcode.svg'
 import {TypeWriter} from "../components/TypeWriter";
-import {Hidden} from "@mui/material";
 
 //todo: обрезать видео для гифки
 
@@ -34,17 +33,9 @@ export const Main = () => {
                 <img src={xmark} className="x-mark"/>
                 <img src={xmark} className="x-mark"/>
             </div>
-            {/*<Hidden smDown>*/}
-            {/*    <img src={sight} className="sight"/>*/}
-            {/*</Hidden>*/}
             <img src={barcode} className="barcode"/>
-            <Hidden mdUp>
-                <h1 className="main__title" data-text="STEP INTO THE FUTURE...">Step into the Future...</h1>
-            </Hidden>
-            {/*<TypeWriter strings={["Enhance", "Experience", "Elevate", "Your Future", "Step into the Future..."]}/>*/}
-            <Hidden mdDown>
-                <TypeWriter strings={["Enhance", "Experience", "Elevate", "Your Future..."]}/>
-            </Hidden>
+
+            <TypeWriter strings={["Enhance", "Experience", "Elevate"]}/>
             <div className="main__audio-player__wrapper">
                 <div className="main__audio-player__container">
                     <AudioPlayer/>
