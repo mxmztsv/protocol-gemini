@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/protocol-gemini/static/css/main.3ef16b24.css",
-    "main.js": "/protocol-gemini/static/js/main.ba97ef4b.js",
+    "main.css": "/protocol-gemini/static/css/main.5707b4a3.css",
+    "main.js": "/protocol-gemini/static/js/main.7c579955.js",
     "static/js/787.ff2947cf.chunk.js": "/protocol-gemini/static/js/787.ff2947cf.chunk.js",
     "static/media/Intro.mp4": "/protocol-gemini/static/media/Intro.e195d374322bb02338a9.mp4",
     "static/media/plug.gif": "/protocol-gemini/static/media/plug.2c10636d007bd36d6589.gif",
@@ -25,11 +25,11 @@
     "static/media/augmented4.jpg": "/protocol-gemini/static/media/augmented4.36575a600ee51ecd0d46.jpg",
     "static/media/augmented2.jpg": "/protocol-gemini/static/media/augmented2.25fd17fd2aead9e67da9.jpg",
     "static/media/partner2.svg": "/protocol-gemini/static/media/partner2.a4dc489c12dffc5e4bc9a34d6051cb21.svg",
-    "static/media/step2.svg": "/protocol-gemini/static/media/step2.c5b0ab712c37fab8f8ce05fef3153a5d.svg",
     "static/media/MonumentExtended-Regular.otf": "/protocol-gemini/static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
-    "static/media/step3.svg": "/protocol-gemini/static/media/step3.1e61928fb2f099c65f6c90240402d895.svg",
-    "static/media/step1.svg": "/protocol-gemini/static/media/step1.ec567c2bca5785cd27c734b55a908fed.svg",
+    "static/media/step2.svg": "/protocol-gemini/static/media/step2.08d81b92916dd183ee90500b34cda95c.svg",
+    "static/media/step3.svg": "/protocol-gemini/static/media/step3.a4b089a213385bae44f9e300812c229f.svg",
     "static/media/logo.svg": "/protocol-gemini/static/media/logo.aa4a67dff2d5b717bd09acc53a2b8772.svg",
+    "static/media/step1.svg": "/protocol-gemini/static/media/step1.4c8d0b94d8968f33de08cf8f39a665cf.svg",
     "static/media/Protocol-Gemini_Flat 2.svg": "/protocol-gemini/static/media/Protocol-Gemini_Flat 2.a42fd8c49cc64fe839d99e6da0b32404.svg",
     "static/media/Protocol-Gemini_Flat 3.svg": "/protocol-gemini/static/media/Protocol-Gemini_Flat 3.ebaa0cd927d6cb65d5cffe3374c8f8fa.svg",
     "static/media/coreblocks.svg": "/protocol-gemini/static/media/coreblocks.def41f7bf07c4e734f4a766666b50440.svg",
@@ -79,12 +79,12 @@
     "static/media/join-us-btn.svg": "/protocol-gemini/static/media/join-us-btn.dc7ffe57c5c64b43c23e.svg",
     "static/media/marker.svg": "/protocol-gemini/static/media/marker.1d0adfd3b1c191fbdfb725280221fa2d.svg",
     "static/media/arrow-bottom-left.svg": "/protocol-gemini/static/media/arrow-bottom-left.74539d37bd72b004144bdaa253427562.svg",
-    "main.3ef16b24.css.map": "/protocol-gemini/static/css/main.3ef16b24.css.map",
-    "main.ba97ef4b.js.map": "/protocol-gemini/static/js/main.ba97ef4b.js.map",
+    "main.5707b4a3.css.map": "/protocol-gemini/static/css/main.5707b4a3.css.map",
+    "main.7c579955.js.map": "/protocol-gemini/static/js/main.7c579955.js.map",
     "787.ff2947cf.chunk.js.map": "/protocol-gemini/static/js/787.ff2947cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ef16b24.css",
-    "static/js/main.ba97ef4b.js"
+    "static/css/main.5707b4a3.css",
+    "static/js/main.7c579955.js"
   ]
 }
