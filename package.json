@@ -1,5 +1,6 @@
 {
   "name": "protocol_gemini",
+  "homepage": "https://protocolgemini.maximzaytsev.ru/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
