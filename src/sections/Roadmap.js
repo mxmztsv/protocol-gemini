@@ -37,8 +37,7 @@ export const Roadmap = () => {
                 date: "JUNE-OCT.2020",
                 text: [
                     "Alin Matei: UI/UX",
-                    "Sergii Golotovskiy: Worldbuilder",
-                    "Jai Dhawan: CTO and Co-Founder"
+                    "Sergii Golotovskiy: Worldbuilder"
                 ]
             },
             {
